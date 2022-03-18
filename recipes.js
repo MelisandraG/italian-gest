@@ -17,7 +17,7 @@ pasta=[{
             methodOfCooking:"Boiling"},
         }
 ];
-Pizza=[{
+pizza=[{
     name:"Detroit-Style Pepperoni Pizza",
     photo:"https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
     ingredients:"Extra-virgin olive oil (for pan); Bread flour (for surface); ½ batch (360 g) Master Bread Dough; 8 oz. low-moisture mozzarella or brick cheese; ¾ cup store-bought marinara sauce; 4 oz. pepperoni, sliced; ½ tsp. dried oregano; ½ cup (lightly packed) basil leaves",
@@ -35,15 +35,11 @@ Pizza=[{
             diets:"Vegetarian",
             methodOfCooking:"Baking"
         }
-    },
-
-
-
-    
+    }
 ];
-pasta=[{
-    name:"",
-    photo:"",
+risotto=[{
+    name:"Shrimp Scampi with Green Onions and Orzo",
+    photo:"https://images.unsplash.com/photo-1581073746562-e7fd2422f0eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
     ingredients:"3/4 cup orzo (rice-shaped pasta); 4 tablespoons (1/2 stick) butter, divided; 2 tablespoons olive oil; 2 garlic cloves, peeled; 1 pound uncooked large shrimp, peeled, deveined; 4 green onions, thinly sliced; 1/3 cup dry white wine",
     preparation:"Step 1 Cook orzo in large saucepan of boiling salted water until tender but still firm to bite, stirring occasionally.; Step 2 Meanwhile, melt 2 tablespoons butter with oil in heavy large skillet over medium-high heat. Using garlic press, squeeze in garlic; stir 10 seconds. Add shrimp and sauté 2 minutes. Add green onions and toss until shrimp are just opaque in center, about 1 minute longer. Add wine and toss until wine boils, about 1 minute. Mix in remaining 2 tablespoons butter and season to taste with salt and pepper.; Step 3 Drain pasta; transfer to large bowl. Top with shrimp and onion-garlic butter.",
     filter:{skills:"",
@@ -51,15 +47,76 @@ pasta=[{
             methodOfCooking:""}
         },
     { 
-    name:"",
-    photo:"",
-    ingredients:"",
-    preparation:"",
+    name:"Risotto With Mushrooms and Thyme",
+    photo:"https://images.unsplash.com/photo-1637361874063-e5e415d7bcf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    ingredients:"1 Tbsp. kosher salt, plus more;6 Tbsp. extra-virgin olive oil; ½ large white onion, finely chopped; 2 cups carnaroli or Japanese sushi rice; 1 cup dry white wine; 5 Tbsp. unsalted butter, cut into pieces; 2 oz. Parmesan, finely grated; ¼ cup extra-virgin olive oil; 1 lb. mushrooms (such as shiitake, crimini, or maitake), trimmed, caps torn into 2 pieces; Kosher salt; Freshly ground pepper; 5 sprigs thyme; 5 garlic cloves, crushed; 2 Tbsp. unsalted butter; 2 Tbsp. white wine vinegar or fresh lemon juice; 1 oz. Parmesan, finely grated",
+    preparation:"Step 1 Combine 1 Tbsp. salt and 10 cups water in a medium pot. Bring to a boil, then reduce heat to medium to maintain a bare simmer.; Step 2 heat oil in a 6-qt. Dutch oven over medium. Add onion and a pinch of salt and cook, stirring often, until onion is translucent and starting to soften, 6–8 minutes. Add ½ cup water and cook, stirring often, until water evaporates and onion is sizzling in oil and tender, about 5 minutes. Taste onion; if it’s still firm at all, add a splash of water and continue to cook until meltingly soft.; Step 3 Add rice and stir well to coat with oil. Cook, stirring constantly, until grains are translucent around the edges and make a clattering sound when they hit against the pot, about 5 minutes. Add wine and another pinch of salt. Bring to a simmer and cook, stirring occasionally, until wine evaporates, about 2 minutes.; Step 4 Reduce heat to medium, then add hot salted water to rice in ¾-cup increments, stirring constantly and allowing liquid to absorb fully before adding more, until rice is al dente and suspended in a fluid, not-too-thick creamy liquid, 25–30 minutes. It should take 2–3 minutes for each addition to be absorbed; if things are moving faster than this, reduce heat to medium-low. The finished texture should be more of a liquid than a solid. Start checking rice about 15 minutes after the first water addition; the grains should be tender but not mushy, with a slightly firm center that doesn’t leave a chalky residue between your teeth after tasting. Do not overcook!;Step 5 Remove pot from heat, add butter, and stir until melted. Gradually add Parmesan, stirring until cheese is melted and liquid is creamy but very loose; stir in more hot salted water if needed. Taste and season with more salt.; Step 6 Heat oil in a large skillet over medium-high until shimmering. Add mushrooms; cook, tossing occasionally, until they begin to soften and release some liquid, about 3 minutes. Season with salt and pepper; cook, tossing occasionally, until deeply browned and tender, 8–10 minutes. Add thyme, garlic, and butter and cook, tossing occasionally until garlic softens and  butter is golden brown, about 3 minutes. Remove from heat and add vinegar. Toss to coat, scraping up any browned bits. Pluck out thyme.; Step 7 Divide risotto among warm bowls. Top each with a few grinds of pepper and spoon mushroom mixture over. Serve with Parmesan alongside.",
     filter:{skills:"",
             diets:"",
             methodOfCooking:""},
         }
 ];
+Desserts =[{
+    name:"Classic Cannoli",
+    photo:"https://images.unsplash.com/photo-1611292984550-6dd8def2e668?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80",
+    ingredients:"150g plain flour; 1 tbsp golden caster sugar; large pinch bicarbonate of soda; ½ tsp cinnamon; 1 tsp cocoa powder; 30g butter; 1 egg, separated; 50ml dry marsala or white wine; rapeseed oil or sunflower oil for deep-frying (see tip); 50g dark chocolate, melted; handful pistachio kernels, finely chopped; icing sugar, to dust; 250g ricotta, drained and beaten until fluffy; 100g mascarpone; 2 tbsp finely chopped candied peel; 2 tbsp icing sugar; cannoli moulds",
+    preparation:"STEP 1 Tip the flour, sugar, bicarb, cinnamon and cocoa (if using) into a bowl with a pinch of salt. Add the butter and rub it into the dry ingredients until there are no more lumps. Mix the egg yolk and marsala and add this to the bowl, then mix the whole lot together and knead to a smooth dough. Wrap and rest in the fridge. (Can be made ahead and fried the next day.); STEP 2 Fill a deep-fat fryer, wok or deep saucepan a third of the way up with oil. Cut the dough into pieces and, working one piece at a time, roll them out as thinly as you can – use a pasta machine if you have one. Heat the oil and keep an eye on it until it reaches 180C. Lay the dough out on a lightly floured surface and cut out circles about 11cm across. Wrap each one around a cannoli mould, using some of the egg white to stick the top edge down and they're ready for frying.It's important to take care when cooking with hot oil. Read our guide on how to deep-fry safely to avoid accidents in the kitchen.; STEP 3 Deep-fry the cannoli (with their moulds) one at a time, making sure they cook all over. They should take about 45-60 seconds in all and should be visibly golden brown (keep cooking a little longer if they aren't) and the dough will bubble and blister. Carefully take each one out of the oil using the tongs and shake the cannoli off the mould very carefully onto kitchen paper. As you fry each one, make sure the oil stays at 180C at all times and doesn’t get any hotter. These will keep for 2-3 days in an airtight container.; STEP 4 When the cannoli are cold, dip the end of each one into chocolate, then dip some of those into the pistachios. Leave to cool and harden. Beat the ricotta and mascarpone together, then stir in the candied peel and sugar. Spoon the mixture into a piping bag with a wide star nozzle and pipe it into the cannoli. Serve soon after filling.",
+    filter:{skills:"",
+            diets:"o",
+            methodOfCooking:""}
+        },
+    { 
+    name:"Quick & easy tiramisu",
+    photo:"https://images.unsplash.com/photo-1593545024944-b3c74435b9f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    ingredients:"3 tsp instant coffee granules; 3 tbsp coffee liqueur (or Camp Chicory & Coffee Essence); 250g tub mascarpone; 85g condensed milk; 1 tsp vanilla extract; 4-6 sponge fingers; 1 tbsp cocoa powder.",
+    preparation:"STEP 1 Mix the coffee granules with 2 tbsp boiling water in a large jug and stir to combine. Add the coffee liqueur and 75ml cold water. Pour into a shallow dish and set aside. STEP 2; Make the cream layer by beating the mascarpone, condensed milk and vanilla extract with an electric whisk until thick and smooth. STEP 3; Break the sponge fingers into two or three pieces and soak in the coffee mixture for a few secs. Put a few bits of the sponge in the bottom of two wine or sundae glasses and top with the cream. Sift over the cocoa and chill for at least 1 hr before serving.",
+    filter:{skills:"",
+            diets:"",
+            methodOfCooking:""
+        }
+    }
+];
+fish =[{
+    name:"Fish pie mac ’n’ cheese",
+    photo:"https://images.pexels.com/photos/5060461/pexels-photo-5060461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    ingredients:"650ml milk; 40g plain flour; 40g butter; 2 tsp Dijon mustard; 150g mature cheddar , grated; 180g frozen peas; handful of parsley , chopped; 300g macaroni; 300g fish pie mix (smoked fish, white fish and salmon); green salad , to serve (optional)",
+    preparation:"STEP 1 Pour the milk into a large pan and add the flour and butter. Set over a medium heat and whisk continuously until you have a smooth, thick white sauce. Remove from the heat, add the mustard, most of the cheese (save a handful for the top), peas and parsley.; STEP 2 Meanwhile, boil the pasta in a large pan of water following pack instructions until just cooked. Drain.; STEP 3 Heat the oven to 200C/180C fan/gas 6. Tip the pasta into the sauce and add half the fish, stir everything together then tip into a large baking dish. Top with the rest of the fish, pushing it into the pasta a little, then scatter with the remaining cheese. Bake for 30 mins until golden, then serve with salad, if you like. Can be chilled and eaten within three days or frozen for up to a month. Defrost in the fridge, then reheat in a microwave or oven until piping hot.",
+    filter:{skills:"",
+            diets:"",
+            methodOfCooking:""}
+        },
+    { 
+    name:"Gnocchi fish pie",
+    photo:"https://images.unsplash.com/photo-1616170687881-32188ae1b6d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    ingredients:"350g gnocchi; 200ml semi-skimmed milk; 2 tbsp cornflour; 400g fish pie mix , or a mix of salmon, smoked haddock and prawns; 4 spring onions , sliced; 1 tbsp chopped chives , or 1/2 tbsp finely chopped tarragon; 150ml reduced-fat crème fraîche; 1 tsp capers , drained; 200g frozen peas; 1 tsp olive oil; 250g long-stem broccoli or green beans, steamed, to serve",
+    preparation:"STEP 1 Put the gnocchi in a deep ovenproof frying pan and cover with boiling water and a pinch of salt. Simmer for 2-3 mins, then drain and leave to steam-dry.; STEP 2 Combine a splash of the milk with the cornflour until you have a smooth paste, then add to the rest of the milk. Pour the mixture into the frying pan, then add the fish pie mix and spring onions, and bring to a gentle simmer. Cook, stirring frequently, until the sauce has thickened and the fish is just cooked, about 4-5 mins. Season well. Stir in the herbs, crème fraîche, capers and peas, and bring back to a simmer.; STEP 3 Heat the grill to medium-high. Arrange the gnocchi over the filling, then brush with the oil and season with some black pepper. Grill for 5-10 mins, or until the gnocchi has puffed up and is starting to turn golden on top. Serve with the broccoli or green beans on the side.",
+    filter:{skills:"",
+            diets:"",
+            methodOfCooking:""
+        }
+    }
+];
+meat =[{
+    name:"Classic Italian lasagne",
+    photo:"https://images.unsplash.com/photo-1574894709920-11b28e7367e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    ingredients:"250g pack fresh lasagne sheets; olive oil, for greasing; large handful grated parmesan; 110g unsalted butter; 1 celery stick, finely chopped; 1 carrot, finely chopped; 1 small red onion, finely chopped; 25g dried porcini, soaked for 10 mins in hot water, drained and roughly chopped; 1 rosemary sprig, leaves picked and chopped; 1kg trimmed beef or veal flank, finely chopped (ask your butcher to do this for you); 125ml dry white wine; 400g can good-quality chopped tomatoes; 1l full-fat milk; 1 bay leaf; 75g unsalted butter; 125g ‘00’ pasta flour; good grating of nutmeg; 100g parmesan, finely grated; 2 egg yolks",
+    preparation:"STEP 1 For the ragu, melt the butter in a large flameproof casserole dish over a medium heat until foaming. Add the celery, carrot, onion, porcini, rosemary and some seasoning, and fry for 5 mins.; STEP 2 Season the meat, add to the dish and cook for 5 mins until browned. Pour in the wine, add the tomatoes and bring to the boil.; STEP 3 Reduce the heat to low, put the lid on the dish and cook for 1hr 30 mins, removing the lid for the final 30 mins so the sauce can reduce. The meat should be tender but not too broken up, and the sauce should be thick. Taste for seasoning. You can cook it for longer if you have time - the flavour will only improve.; STEP 4 For the béchamel sauce, pour the milk into a saucepan with the bay leaf. Bring to a simmer, turn off the heat and set aside. In a heavy-based saucepan, melt the butter over a medium heat, then whisk in the flour and hot milk. Whisk vigorously until smooth, then cook for 10-15 mins until very thick. Remove the bay leaf and season, grating in nutmeg to taste. Stir in the parmesan and egg yolks, then set aside to cool.; STEP 5 Heat oven to 180C/160C fan/gas 4. Working in batches of three, plunge the pasta sheets into a pan of boiling salted water for 20 secs, just to soften, then immediately put in a bowl of ice-cold water.; STEP 6 Rub oil onto the base and sides of a large baking dish. Put a layer of pasta on the base, then add a layer of ragu, followed by a layer of béchamel sauce. A good tip, for really defined layers, is to pipe the béchamel sauce over.; STEP 7 Repeat this process until you have used all the pasta and ragu, and finish with a layer of béchamel sauce on top. Sprinkle the top with a generous layer of parmesan.; STEP 8 Bake in the oven for 40-45 mins or until bubbling and golden brown, then remove from the oven and leave to settle for 10 mins.; STEP 9 Cut the lasagne into squares and let it sit for another 10 mins before serving – this keeps the layers defined and helps it cool down more quickly.",
+    filter:{skills:"",
+            diets:"",
+            methodOfCooking:""}
+        },
+    { 
+    name:"Porchetta ragu",
+    photo:"https://images.unsplash.com/photo-1601556123240-462c758a50db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    ingredients:"2 tbsp olive oil; 800g pork shoulder, diced; 3 pork sausages; 1 onion, chopped; 1 carrot, chopped; 1 celery stick, chopped; 2 large garlic cloves, crushed; 2 tsp fennel seeds, crushed; pinch of chilli flakes (optional); 200ml white wine; 2 bay leaves; 2 rosemary sprigs, leaves picked and finely chopped; ½ bunch of thyme; 100ml chicken stock; 3 tbsp tomato purée; 2 x 400g cans chopped tomatoes; 2 tbsp double cream; 1 lemon, zested; ½ bunch of parsley, finely chopped; 500g rigatoni pasta; grated parmesan, to serve",
+    preparation:"STEP 1 Heat half the oil in a large casserole over a medium-high heat, and fry the diced pork for 5 mins, stirring often until browned. Transfer to a bowl using a slotted spoon and set aside. Squeeze the sausagemeat from the skins into the pan, and fry for 2-3 mins until browned. Scoop into the bowl with the diced pork.; STEP 2 Reduce the heat to low and fry the onion, carrot and celery for 5 mins in the remaining oil. Add the garlic, fennel seeds and chilli flakes and fry for 1 min more. Return the meat to the pan along with the wine. Bring to a simmer and cook until the liquid has reduced by about half. Add the bay, rosemary, thyme, stock, tomato purée and chopped tomatoes, and return to a simmer. Season. Cover and cook over a low heat for 2 hrs 30 mins, or until the pork is falling apart.; STEP 3 Remove the lid, discard the bay and turn up the heat slightly. Simmer for 5-10 mins, or until slightly reduced, stirring often. Stir in the cream, lemon zest and parsley. Season to taste.; STEP 4 Cook the pasta following pack instructions. Toss with the ragu, and serve sprinkled with parmesan.",
+    filter:{skills:"",
+            diets:"",
+            methodOfCooking:""
+        }
+    }
+];
+
 /*BEGINNERINTERMEDIATEADVANCED*/
 /*VEGETARIAN VEGAN PALEO PESCETARIAN KETOGENIC*/
 /*Bake Grill Griddle Waffle Iron Easy Assembly/Dump and Go*/

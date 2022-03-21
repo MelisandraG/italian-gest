@@ -17,19 +17,19 @@
 /* Add background image and gradient to the slides */
 .slideOne{
   background-image:url("https://images.unsplash.com/photo-1616299915952-04c803388e5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80"),linear-gradient(90deg, rgba(0, 0, 0, 0.67) 1.11%, rgba(0, 0, 0, 0) 76.38%);
-  background-blend-mode:hue;
+  background-blend-mode:color;
   background-size: cover;
 }
 
 .slideTwo{
   background-image:url("https://images.unsplash.com/photo-1530062845289-9109b2c9c868?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"),linear-gradient(90deg, rgba(0, 0, 0, 0.67) 1.11%, rgba(0, 0, 0, 0) 76.38%);
-  background-blend-mode:hue;
+  background-blend-mode:color;
   background-size: cover;
 }
 
 .slideThree{
   background-image:url("https://images.unsplash.com/photo-1505426101273-b50e6f3ff9a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),linear-gradient(90deg, rgba(0, 0, 0, 0.67) 1.11%, rgba(0, 0, 0, 0) 76.38%);
-  background-blend-mode:hue;
+  background-blend-mode:color;
   background-size: cover;
 }
 

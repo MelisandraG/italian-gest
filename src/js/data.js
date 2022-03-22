@@ -121,5 +121,6 @@ const pastaRecipes = [
       }
   ];
 
-const allRecipes = [pastaRecipes, pizzaRecipes, risottoRecipes, dessertRecipes, fishRecipes, meatRecipes];
+export const allRecipes = [pastaRecipes, pizzaRecipes, risottoRecipes, dessertRecipes, fishRecipes, meatRecipes];
 
+export default allRecipes;

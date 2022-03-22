@@ -1,4 +1,5 @@
-import {allRecipes} from "./data.js"
+import {allRecipes} from "./data.js";
+
 
 const cards = document.querySelector(".cards");
 
@@ -72,6 +73,63 @@ function filterObject(array, key, value){
         }
     }
 }
-filterObject(allRecipes, "diet", "Vegan");
 
+const btnAll = document.querySelector("#buttonAll");
+btnAll.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  for (let i = 0; i < allRecipes.length; i++) {
+    for (let j = 0; j < allRecipes[i].length; j++) {
+        createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+  }
+}
+});
 
+const btnPasta = document.querySelector("#buttonPasta");
+btnPasta.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Pasta");
+});
+
+const btnPizza = document.querySelector("#buttonPizza");
+btnPizza.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Pizza");
+});
+
+const btnRisotto = document.querySelector("#buttonRisotto");
+btnRisotto.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Risotto");
+});
+
+const btnFish = document.querySelector("#buttonFish");
+btnFish.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Fish");
+});
+
+const btnMeat = document.querySelector("#buttonMeat");
+btnMeat.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Meat");
+});
+
+const btnDessert = document.querySelector("#buttonDessert");
+btnDessert.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Dessert");
+});

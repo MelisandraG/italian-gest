@@ -155,7 +155,7 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
   let title = document.querySelector("#title");
 
     card.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalTitle.innerHTML = recipeName;
         modalImage.src = imageUrl; 
         //img.getElementById("modalImage").src = imageUrl;

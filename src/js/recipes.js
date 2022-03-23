@@ -127,9 +127,31 @@ btnMeat.addEventListener("click", function() {
 });
 
 const btnDessert = document.querySelector("#buttonDessert");
-btnDessert.addEventListener("click", function() {
+  btnDessert.addEventListener("click", function() {
   while(cards.firstChild){
   cards.removeChild(cards.firstChild);
   };
   filterObject(allRecipes, "category", "Dessert");
 });
+
+
+
+  const categoryBtn = document.getElementById("test"); 
+  categoryBtn.addEventListener("click", function() {
+  while(cards.firstChild){
+  cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Pasta");
+});
+
+function categoryTest(allRecipes, cards){
+  window.location.replace = "../../recipes.html";
+  while(cards.firstChild){
+    cards.removeChild(cards.firstChild);
+  };
+  filterObject(allRecipes, "category", "Pasta");
+}
+
+
+
+//{location.href = "../../recipes.html"; while(cards.firstChild){ cards.removeChild(cards.firstChild);}; filterObject(allRecipes, "category", "Pasta");}

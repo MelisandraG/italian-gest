@@ -228,6 +228,16 @@ header .container .hamburger.isActive .bar {
 
 /* SECTION 1 */
 
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.category {
+  background-color: black;
+  height: 180px;
+}
 
 /* END SECTION 1 */
 

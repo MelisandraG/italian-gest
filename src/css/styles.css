@@ -229,6 +229,46 @@ header .container .hamburger.isActive .bar {
 /* SECTION 1 */
 
 
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 50px;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.category {
+  background-size: cover;
+  width: 100%;
+  height: 158.33px;
+  border-radius: 10px;
+}
+
+#category1{
+  background-image: url("../media/icons/pastaIcon.png");
+  background-position: center center;
+}
+#category2{
+  background-image: url('../media/icons/pizzaIcon.png');
+  background-position: center center;
+}
+#category3{
+  background-image: url('../media/icons/risottoIcon.png');
+  background-position: center center;
+}
+#category4{
+  background-image: url('../media/icons/fishIcon.png');
+  background-position: center center;
+}
+#category5{
+  background-image: url('../media/icons/meatIcon.png');
+  background-position: center center;
+}
+#category6{
+  background-image: url('../media/icons/dessertIcon.png');
+  background-position: center center;
+}
 /* END SECTION 1 */
 
 

@@ -55,12 +55,39 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
   }
 } 
 
-
-for (let i = 0; i < allRecipes.length; i++) {
-    for (let j = 0; j < allRecipes[i].length; j++) {
-        createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+let storage = localStorage.getItem("recipe");
+console.log(storage);
+switch (storage) {
+  case "pasta":
+    while(cards.firstChild){
+      cards.removeChild(cards.firstChild);
+    };
+    filterObject(allRecipes, "category", "Pasta");
+    break;
+  case "all" || null:
+    for (let i = 0; i < allRecipes.length; i++) {
+      for (let j = 0; j < allRecipes[i].length; j++) {
+          createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+    }
   }
+    break;
+  default:
+    for (let i = 0; i < allRecipes.length; i++) {
+      for (let j = 0; j < allRecipes[i].length; j++) {
+          createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+    }
+  }
+    break;
 }
+if(storage === "all" || storage === null){
+  
+}else {
+
+}
+
+
+
+
 
 // function to filter VEGETARIAN
 
@@ -144,8 +171,16 @@ const btnDessert = document.querySelector("#buttonDessert");
   filterObject(allRecipes, "category", "Pasta");
 });
 
+const test4 = document.getElementById("categoryTest");
+console.log(test4);
+test4.addEventListener("click", function (){
+  localStorage.setItem("recipe", "pasta")
+  location.replace = "../../recipes.html";
+})
+
 function categoryTest(allRecipes, cards){
-  window.location.replace = "../../recipes.html";
+  localStorage.setItem("recipe", "pasta")
+  location.replace = "../../recipes.html";
   while(cards.firstChild){
     cards.removeChild(cards.firstChild);
   };

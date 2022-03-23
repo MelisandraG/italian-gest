@@ -1,5 +1,6 @@
 const pastaRecipes = [
     {
+      category: "Pasta",
       recipeName: "Pasta alla Gricia",
       imageUrl:
         "https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
@@ -11,6 +12,7 @@ const pastaRecipes = [
       diet: "Vegetarian" 
     },
     {
+      category: "Pasta",
       recipeName: "Vegan Pasta alla Vodka (Sorta)",
       imageUrl:
         "https://images.unsplash.com/photo-1585672840829-d4ed3abbfb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1404&q=80",
@@ -25,6 +27,7 @@ const pastaRecipes = [
   
   const pizzaRecipes = [
     {
+      category: "Pizza",
       recipeName: "Detroit-Style Pepperoni Pizza",
       imageUrl:
         "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
@@ -36,6 +39,7 @@ const pastaRecipes = [
       diet: "Vegetarian"
     },
     {
+      category: "Pizza",
       recipeName: "Pizza Dough",
       imageUrl:
         "https://images.unsplash.com/photo-1617343251257-b5d709934ddd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
@@ -50,14 +54,16 @@ const pastaRecipes = [
   
   const risottoRecipes = [
       {
-      recipeName:"Shrimp Scampi with Green Onions and Orzo",
-      imageUrl:"https://images.unsplash.com/photo-1581073746562-e7fd2422f0eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
-      ingredients:"3/4 cup orzo (rice-shaped pasta); 4 tablespoons (1/2 stick) butter, divided; 2 tablespoons olive oil; 2 garlic cloves, peeled; 1 pound uncooked large shrimp, peeled, deveined; 4 green onions, thinly sliced; 1/3 cup dry white wine",
-      instructions:"Step 1 Cook orzo in large saucepan of boiling salted water until tender but still firm to bite, stirring occasionally.; Step 2 Meanwhile, melt 2 tablespoons butter with oil in heavy large skillet over medium-high heat. Using garlic press, squeeze in garlic; stir 10 seconds. Add shrimp and sauté 2 minutes. Add green onions and toss until shrimp are just opaque in center, about 1 minute longer. Add wine and toss until wine boils, about 1 minute. Mix in remaining 2 tablespoons butter and season to taste with salt and pepper.; Step 3 Drain pasta; transfer to large bowl. Top with shrimp and onion-garlic butter.",
-      difficulty: "Advanced", 
-      diet: "Vegan"
+        category: "Risotto",
+        recipeName:"Shrimp Scampi with Green Onions and Orzo",
+        imageUrl:"https://images.unsplash.com/photo-1581073746562-e7fd2422f0eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
+        ingredients:"3/4 cup orzo (rice-shaped pasta); 4 tablespoons (1/2 stick) butter, divided; 2 tablespoons olive oil; 2 garlic cloves, peeled; 1 pound uncooked large shrimp, peeled, deveined; 4 green onions, thinly sliced; 1/3 cup dry white wine",
+        instructions:"Step 1 Cook orzo in large saucepan of boiling salted water until tender but still firm to bite, stirring occasionally.; Step 2 Meanwhile, melt 2 tablespoons butter with oil in heavy large skillet over medium-high heat. Using garlic press, squeeze in garlic; stir 10 seconds. Add shrimp and sauté 2 minutes. Add green onions and toss until shrimp are just opaque in center, about 1 minute longer. Add wine and toss until wine boils, about 1 minute. Mix in remaining 2 tablespoons butter and season to taste with salt and pepper.; Step 3 Drain pasta; transfer to large bowl. Top with shrimp and onion-garlic butter.",
+        difficulty: "Advanced", 
+        diet: "Vegan"
       },
       { 
+        category: "Risotto",
       recipeName:"Risotto With Mushrooms and Thyme",
       imageUrl:"https://images.unsplash.com/photo-1637361874063-e5e415d7bcf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       ingredients:"1 Tbsp. kosher salt, plus more;6 Tbsp. extra-virgin olive oil; ½ large white onion, finely chopped; 2 cups carnaroli or Japanese sushi rice; 1 cup dry white wine; 5 Tbsp. unsalted butter, cut into pieces; 2 oz. Parmesan, finely grated; ¼ cup extra-virgin olive oil; 1 lb. mushrooms (such as shiitake, crimini, or maitake), trimmed, caps torn into 2 pieces; Kosher salt; Freshly ground pepper; 5 sprigs thyme; 5 garlic cloves, crushed; 2 Tbsp. unsalted butter; 2 Tbsp. white wine vinegar or fresh lemon juice; 1 oz. Parmesan, finely grated",
@@ -69,6 +75,7 @@ const pastaRecipes = [
   
   const dessertRecipes =[
       {
+        category: "Dessert",
       recipeName:"Classic Cannoli",
       imageUrl:"https://images.unsplash.com/photo-1611292984550-6dd8def2e668?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80",
       ingredients:"150g plain flour; 1 tbsp golden caster sugar; large pinch bicarbonate of soda; ½ tsp cinnamon; 1 tsp cocoa powder; 30g butter; 1 egg, separated; 50ml dry marsala or white wine; rapeseed oil or sunflower oil for deep-frying (see tip); 50g dark chocolate, melted; handful pistachio kernels, finely chopped; icing sugar, to dust; 250g ricotta, drained and beaten until fluffy; 100g mascarpone; 2 tbsp finely chopped candied peel; 2 tbsp icing sugar; cannoli moulds",
@@ -77,6 +84,7 @@ const pastaRecipes = [
       diet: "Vegan"
       },
       { 
+        category: "Dessert",
       recipeName:"Quick & easy tiramisu",
       imageUrl:"https://images.unsplash.com/photo-1593545024944-b3c74435b9f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       ingredients:"3 tsp instant coffee granules; 3 tbsp coffee liqueur (or Camp Chicory & Coffee Essence); 250g tub mascarpone; 85g condensed milk; 1 tsp vanilla extract; 4-6 sponge fingers; 1 tbsp cocoa powder.",
@@ -87,6 +95,7 @@ const pastaRecipes = [
   ];
   const fishRecipes =[
       {
+        category: "Fish",
       recipeName:"Fish pie mac ’n’ cheese",
       imageUrl:"https://images.pexels.com/photos/5060461/pexels-photo-5060461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       ingredients:"650ml milk; 40g plain flour; 40g butter; 2 tsp Dijon mustard; 150g mature cheddar , grated; 180g frozen peas; handful of parsley , chopped; 300g macaroni; 300g fish pie mix (smoked fish, white fish and salmon); green salad , to serve (optional)",
@@ -95,6 +104,7 @@ const pastaRecipes = [
       diet: "Vegan"
       },
       { 
+        category: "Fish",
       recipeName:"Gnocchi fish pie",
       imageUrl:"https://images.unsplash.com/photo-1616170687881-32188ae1b6d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       ingredients:"350g gnocchi; 200ml semi-skimmed milk; 2 tbsp cornflour; 400g fish pie mix , or a mix of salmon, smoked haddock and prawns; 4 spring onions , sliced; 1 tbsp chopped chives , or 1/2 tbsp finely chopped tarragon; 150ml reduced-fat crème fraîche; 1 tsp capers , drained; 200g frozen peas; 1 tsp olive oil; 250g long-stem broccoli or green beans, steamed, to serve",
@@ -104,6 +114,7 @@ const pastaRecipes = [
       }
   ];
   const meatRecipes =[{
+    category: "Meat",
       recipeName:"Classic Italian lasagne",
       imageUrl:"https://images.unsplash.com/photo-1574894709920-11b28e7367e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       ingredients:"250g pack fresh lasagne sheets; olive oil, for greasing; large handful grated parmesan; 110g unsalted butter; 1 celery stick, finely chopped; 1 carrot, finely chopped; 1 small red onion, finely chopped; 25g dried porcini, soaked for 10 mins in hot water, drained and roughly chopped; 1 rosemary sprig, leaves picked and chopped; 1kg trimmed beef or veal flank, finely chopped (ask your butcher to do this for you); 125ml dry white wine; 400g can good-quality chopped tomatoes; 1l full-fat milk; 1 bay leaf; 75g unsalted butter; 125g ‘00’ pasta flour; good grating of nutmeg; 100g parmesan, finely grated; 2 egg yolks",
@@ -112,6 +123,7 @@ const pastaRecipes = [
       diet: "Vegan"
       },
       { 
+        category: "Meat",
       recipeName:"Porchetta ragu",
       imageUrl:"https://images.unsplash.com/photo-1601556123240-462c758a50db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       ingredients:"2 tbsp olive oil; 800g pork shoulder, diced; 3 pork sausages; 1 onion, chopped; 1 carrot, chopped; 1 celery stick, chopped; 2 large garlic cloves, crushed; 2 tsp fennel seeds, crushed; pinch of chilli flakes (optional); 200ml white wine; 2 bay leaves; 2 rosemary sprigs, leaves picked and finely chopped; ½ bunch of thyme; 100ml chicken stock; 3 tbsp tomato purée; 2 x 400g cans chopped tomatoes; 2 tbsp double cream; 1 lemon, zested; ½ bunch of parsley, finely chopped; 500g rigatoni pasta; grated parmesan, to serve",
@@ -121,5 +133,6 @@ const pastaRecipes = [
       }
   ];
 
-const allRecipes = [pastaRecipes, pizzaRecipes, risottoRecipes, dessertRecipes, fishRecipes, meatRecipes];
+export const allRecipes = [pastaRecipes, pizzaRecipes, risottoRecipes, dessertRecipes, fishRecipes, meatRecipes];
 
+export default allRecipes;

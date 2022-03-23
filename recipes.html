@@ -46,13 +46,13 @@
         <div class="container">
             <h1>Recipes</h1>
             <div class="filters">
-                <button class="filter-all">All recipes</button>
-                <button class="filter-specific">Pasta</button>
-                <button class="filter-specific">Pizza</button>
-                <button class="filter-specific">Risotto</button>
-                <button class="filter-specific">Fish</button>
-                <button class="filter-specific">Meat</button>
-                <button class="filter-specific">Desserts</button>
+                <button id="buttonAll" class="filter-all">All recipes</button>
+                <button id="buttonPasta" class="filter-specific">Pasta</button>
+                <button id="buttonPizza" class="filter-specific">Pizza</button>
+                <button id="buttonRisotto" class="filter-specific">Risotto</button>
+                <button id="buttonFish" class="filter-specific">Fish</button>
+                <button id="buttonMeat" class="filter-specific">Meat</button>
+                <button id="buttonDessert" class="filter-specific">Desserts</button>
                 
                 <div>
                     <select class="filter-diet">
@@ -91,8 +91,7 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div class="image-box">  
-                <img id="modalImage" src="" alt="Food picture">
+            <div id="modalImage" class="image-box">  
             </div>
             <h2 id="modalTitle"></h2>
             <p>Ingredients:</p>
@@ -187,7 +186,7 @@
    
 
     <script src="/src/js/index.js"></script>
-    <script src="/src/js/recipes.js"></script>
-    <script src="/src/js/data.js"></script>
+    <script type="module" src="/src/js/recipes.js"></script>
+    <!--<script type="module" src="/src/js/data.js"></script>-->
 </body>
 </html>

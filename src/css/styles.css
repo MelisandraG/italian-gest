@@ -27,8 +27,15 @@
 /* TEXT */ 
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 32px;
   font-weight: 800;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 46px;
+  }
 }
 
 /* END OF GENERAL */ 
@@ -421,6 +428,86 @@ select::before {
 
 
 /* END MODAL*/
+
+/* SUBMIT RECIPE */
+
+.container-form {
+  max-width: 700px;
+  padding-bottom: 40px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+form .form-row-1, .form-row-2, .form-row-3, .form-row-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+form .form-row-item {
+  display: grid;
+  gap: 10px;
+}
+form label {
+  font-weight: 600;
+}
+
+form input, input[type=text], textarea, select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  background-color: #E5EBEB;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+form input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  content: "";
+  height: 3em;
+  width: 3em;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  content: url('../media/icons/check.svg') no-repeat center / 75% auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  form .form-row-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container-form h1 {
+    text-align: center;
+  }
+}
+
+/* END OF SUBMIT RECIPE */
 
 
 /* FOOTER */

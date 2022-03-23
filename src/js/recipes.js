@@ -34,7 +34,7 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
     card.onclick = function(){
         modal.style.display = "flex";
         modalTitle.innerHTML = recipeName;
-        modalImage.src = imageUrl; 
+        modalImage.style.backgroundImage = "url(" + imageUrl + ")"; 
         //img.getElementById("modalImage").src = imageUrl;
         modalIngredients.innerHTML = ingredients;
         modalInstructions.innerHTML = instructions;

@@ -265,13 +265,35 @@ header .container .hamburger.isActive .bar {
   margin-top: 30px;
 }
 
+.filterToggled {
+  background-color: black !important;
+  color: white;
+}
+
 .filters .filter-all {
   background-color: var(--primary-color);
+  transition: all 200ms ease-in-out;
 }
 
 .filter-specific, .filter-diet , .filter-difficulty {
   background-color: transparent;
   border: 1px solid black !important;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.filter-all:hover {
+  background-color: #f3bbb7;
+  cursor: pointer;
+}
+
+.filter-specific:hover, .filter-diet:hover , .filter-difficulty:hover {
+  background-color: black;
+  color: white !important;
+} 
+
+.fiter-select:hover path {
+  stroke: white !important;
 }
 
 .filter-difficulty , .filter-diet {

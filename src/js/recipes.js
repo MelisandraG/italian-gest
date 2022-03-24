@@ -2,7 +2,7 @@ import {allRecipes} from "./data.js";
 
 const cards = document.querySelector(".cards");
 
-function createRecipeCard(recipeName, imageUrl, ingredients, instructions, difficulty, diet) {
+function createRecipeCard(recipeName, imageUrl, ingredients, instructions, difficulty, difficultyImage, diet, prepTime, dietImage, nutriScore) {
   const card = document.createElement("div");
   card.classList.add("card");
   cards.appendChild(card);
@@ -18,38 +18,85 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
 
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");
-  card.appendChild(cardBody);
-
+  cardHeader.appendChild(cardBody);
 
   const cardTitle = document.createElement("h2");
   cardTitle.classList.add("card-title");
   cardTitle.innerHTML = recipeName;
   cardBody.appendChild(cardTitle);
 
+  const cardFooter = document.createElement("div");
+  cardFooter.classList.add("card-footer");
+  card.appendChild(cardFooter);
+
+  const cardFooterLeft = document.createElement("div");
+  cardFooterLeft.classList.add("card-footer-left");
+  cardFooter.appendChild(cardFooterLeft);
+
+  const cardFooterRight = document.createElement("div");
+  cardFooterRight.classList.add("card-footer-right");
+  cardFooter.appendChild(cardFooterRight);
+
+  const cardFooterLeft1 = document.createElement("div");
+  cardFooterLeft1.classList.add("card-footer-left-1");
+  cardFooterLeft.appendChild(cardFooterLeft1);
+
+  const cardFooterLeft2 = document.createElement("div");
+  cardFooterLeft2.classList.add("card-footer-left-2");
+  cardFooterLeft.appendChild(cardFooterLeft2);
+
+  const clock = document.createElement("img");
+  clock.src = "/src/media/icons/clock.svg";
+  clock.classList.add("clock");
+  cardFooterLeft1.appendChild(clock);
+
+  const preparationTime = document.createElement("p");
+  preparationTime.classList.add("prep-time");
+  preparationTime.innerHTML = prepTime;
+  cardFooterLeft1.appendChild(preparationTime);
+
+  const difficultyString = document.createElement("p");
+  difficultyString.classList.add("difficulty-string");
+  difficultyString.innerHTML = difficulty;
+  cardFooterLeft2.appendChild(difficultyString);
+
+  const difficultyImg = document.createElement("img");
+  difficultyImg.src = difficultyImage;
+  difficultyImg.classList.add("difficulty-img");
+  cardFooterLeft2.appendChild(difficultyImg);
+
+
+
   let modal = document.querySelector(".modal");
   let span = document.getElementsByClassName("close")[0];
   let title = document.querySelector("#title");
 
-    card.onclick = function(){
-        modal.style.display = "flex";
-        modalTitle.innerHTML = recipeName;
-        modalImage.style.backgroundImage = "url(" + imageUrl + ")"; 
-        //img.getElementById("modalImage").src = imageUrl;
-        modalIngredients.innerHTML = ingredients;
-        modalInstructions.innerHTML = instructions;
-        modalDifficulty.innerHTML = difficulty;
-        modalDiet.innerHTML = diet;
+  card.onclick = function(){
+      modal.style.display = "flex";
+      modalTitle.innerHTML = recipeName;
+      modalImage.style.backgroundImage = "url(" + imageUrl + ")"; 
+      //img.getElementById("modalImage").src = imageUrl;
+      modalIngredients.innerHTML = ingredients;
+      modalInstructions.innerHTML = instructions;
+      modalDifficulty.innerHTML = difficulty;
+      modalDiet.innerHTML = diet;
   }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+  card.addEventListener("click", function() {
+    document.body.style.overflow = "hidden";
+  });
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+  }
   
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      document.body.style.overflow = "auto";
     }
   }
 } 
@@ -67,7 +114,7 @@ function filterObject(array, key, value){
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array[i].length; j++) {
             if (array[i][j][key] === value){
-                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet, allRecipes[i][j].dietImage, allRecipes[i][j].difficultyImage, allRecipes[i][j].prepTime )
             }
         }
     }

@@ -81,7 +81,7 @@ header .container nav a {
   font-size: 1rem;
   text-decoration: none;
   letter-spacing: 1%;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   padding: 15px 25px 15px 25px;
   cursor: pointer !important;
   pointer-events: auto;

@@ -120,3 +120,66 @@ meat =[{
 /*BEGINNERINTERMEDIATEADVANCED*/
 /*VEGETARIAN VEGAN PALEO PESCETARIAN KETOGENIC*/
 /*Bake Grill Griddle Waffle Iron Easy Assembly/Dump and Go*/
+
+
+/// LOCAL STORAGE
+
+let storage = localStorage.getItem("recipe");
+console.log("storage: "+storage);
+
+switch (storage) {
+    case "pasta":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Pasta");
+        break;
+    case "pizza":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Pizza");
+        break;
+    case "risotto":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Risotto");
+        break;
+    case "fish":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Fish");
+        break;
+    case "meat":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Meat");
+        break;
+    case "dessert":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Dessert");
+        break;
+    case "all":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        for (let i = 0; i < allRecipes.length; i++) {
+            for (let j = 0; j < allRecipes[i].length; j++) {
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+            }
+        }
+        break;
+    default:
+        for (let i = 0; i < allRecipes.length; i++) {
+            for (let j = 0; j < allRecipes[i].length; j++) {
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+            }
+        }
+        break;
+}
+

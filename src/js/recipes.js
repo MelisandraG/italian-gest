@@ -2,7 +2,7 @@ import {allRecipes} from "./data.js";
 
 const cards = document.querySelector(".cards");
 
-function createRecipeCard(recipeName, imageUrl, ingredients, instructions, difficulty, difficultyImage, diet, prepTime, dietImage, nutriScore) {
+function createRecipeCard(recipeName, imageUrl, ingredients, instructions, difficulty, difficultyImage, diet, dietImage, prepTime) {
   const card = document.createElement("div");
   card.classList.add("card");
   cards.appendChild(card);
@@ -50,6 +50,7 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
   clock.classList.add("clock");
   cardFooterLeft1.appendChild(clock);
 
+  console.log(prepTime);
   const preparationTime = document.createElement("p");
   preparationTime.classList.add("prep-time");
   preparationTime.innerHTML = prepTime;
@@ -114,7 +115,7 @@ function filterObject(array, key, value){
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array[i].length; j++) {
             if (array[i][j][key] === value){
-                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet, allRecipes[i][j].dietImage, allRecipes[i][j].difficultyImage, allRecipes[i][j].prepTime )
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].difficultyImage, allRecipes[i][j].diet, allRecipes[i][j].dietImage, allRecipes[i][j].prepTime)
             }
         }
     }
@@ -168,14 +169,14 @@ switch (storage) {
         };
         for (let i = 0; i < allRecipes.length; i++) {
             for (let j = 0; j < allRecipes[i].length; j++) {
-                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].difficultyImage, allRecipes[i][j].diet, allRecipes[i][j].dietImage, allRecipes[i][j].prepTime)
             }
         }
         break;
     default:
         for (let i = 0; i < allRecipes.length; i++) {
             for (let j = 0; j < allRecipes[i].length; j++) {
-                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].difficultyImage, allRecipes[i][j].diet, allRecipes[i][j].dietImage, allRecipes[i][j].prepTime)
             }
         }
         break;
@@ -189,7 +190,7 @@ btnAll.addEventListener("click", function() {
   };
   for (let i = 0; i < allRecipes.length; i++) {
     for (let j = 0; j < allRecipes[i].length; j++) {
-        createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+        createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].difficultyImage, allRecipes[i][j].diet, allRecipes[i][j].dietImage, allRecipes[i][j].prepTime)
   }
 }
 });

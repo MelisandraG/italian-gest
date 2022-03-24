@@ -722,6 +722,9 @@ select::before {
 .difficulty-string {
   font-weight: 600;
 }
+.difficulty-img{
+  width: 80px;
+}
 
 .card-footer-left-1 {
   display: flex;
@@ -749,23 +752,28 @@ select::before {
 }
 
 @media only screen and (min-width: 1024px) {
-.cards {
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-.card {
-  min-height: 480px;
-}
-.card-img {
-  height: 200px;
-}
-.card-body, .card-footer {
-  padding: 10px 20px 20px 20px;
-}
-.card-body h2 {
-  padding: 5px;
-}
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .card {
+    min-height: 480px;
+  }
+  .card-img {
+    height: 200px;
+  }
+  .card-body, .card-footer {
+    padding: 10px 20px 20px 20px;
+  }
+  .card-body h2 {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+  .difficulty-img {
+    width: 170px;
+  }
+
 }
 /* END OF CARDS */
 

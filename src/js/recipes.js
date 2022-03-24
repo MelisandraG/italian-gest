@@ -1,6 +1,5 @@
 import {allRecipes} from "./data.js";
 
-
 const cards = document.querySelector(".cards");
 
 function createRecipeCard(recipeName, imageUrl, ingredients, instructions, difficulty, diet) {
@@ -56,12 +55,12 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
 } 
 
 
-for (let i = 0; i < allRecipes.length; i++) {
+/*for (let i = 0; i < allRecipes.length; i++) {
     for (let j = 0; j < allRecipes[i].length; j++) {
         createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
   }
 }
-
+*/
 // function to filter VEGETARIAN
 
 function filterObject(array, key, value){
@@ -73,6 +72,68 @@ function filterObject(array, key, value){
         }
     }
 }
+
+/// LOCAL STORAGE
+
+let storage = localStorage.getItem("recipe");
+console.log("storage: "+storage);
+
+switch (storage) {
+    case "pasta":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Pasta");
+        break;
+    case "pizza":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Pizza");
+        break;
+    case "risotto":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Risotto");
+        break;
+    case "fish":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Fish");
+        break;
+    case "meat":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Meat");
+        break;
+    case "dessert":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        filterObject(allRecipes, "category", "Dessert");
+        break;
+    case "all":
+        while(cards.firstChild){
+            cards.removeChild(cards.firstChild);
+        };
+        for (let i = 0; i < allRecipes.length; i++) {
+            for (let j = 0; j < allRecipes[i].length; j++) {
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+            }
+        }
+        break;
+    default:
+        for (let i = 0; i < allRecipes.length; i++) {
+            for (let j = 0; j < allRecipes[i].length; j++) {
+                createRecipeCard(allRecipes[i][j].recipeName, allRecipes[i][j].imageUrl, allRecipes[i][j].ingredients, allRecipes[i][j].instructions, allRecipes[i][j].difficulty, allRecipes[i][j].diet)
+            }
+        }
+        break;
+}
+
 
 const btnAll = document.querySelector("#buttonAll");
 btnAll.addEventListener("click", function() {
@@ -155,3 +216,6 @@ function categoryTest(allRecipes, cards){
 
 
 //{location.href = "../../recipes.html"; while(cards.firstChild){ cards.removeChild(cards.firstChild);}; filterObject(allRecipes, "category", "Pasta");}
+
+
+

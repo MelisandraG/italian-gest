@@ -458,8 +458,8 @@ header .container .hamburger.isActive .bar {
 #category3{
   background-image: url('../media/icons/risottoIcon.png');
   background-position: center center;
-  background-position: -3px;
-  background-size: 102%;
+  background-position: -1px;
+  background-size: 106%;
 }
 #category4{
   background-image: url('../media/icons/fishIcon.png');

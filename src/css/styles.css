@@ -260,6 +260,7 @@ header .container .hamburger.isActive .bar {
   position: relative;
   margin: auto;
   display:flex;
+  background-color: black;
 }
 
 /* Hide the images by default */

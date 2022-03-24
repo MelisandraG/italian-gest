@@ -12,6 +12,7 @@
   box-sizing:border-box;
   margin: 0;
   font-family: "Manrope";
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -532,12 +533,14 @@ header .container .hamburger.isActive .bar {
 }
 
 #latest-article-1{
-  background-image: url("../media/latestArticle1.png");
+  background-image: url("../media/latestArticle1.png"), linear-gradient(90deg, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.2) 100%);
   background-position: center center;
+  background-blend-mode:color;
 }
 #latest-article-2{
-  background-image: url("../media/latestArticle2.png");
+  background-image: url("../media/latestArticle2.png"), linear-gradient(90deg, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.2) 100%);
   background-position: center center;
+  background-blend-mode:color;
 }
 
 @media only screen and (min-width: 1040px) {
@@ -568,8 +571,8 @@ header .container .hamburger.isActive .bar {
     color: white;
   }
   .article-subtitle{
-    font-size: 24px;
-    color: white;
+    font-size: 20px;
+    color: var(--primary-color);
 }
 .grid-chevron{
   padding: 35px;

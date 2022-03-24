@@ -11,3 +11,5 @@ hamburger.addEventListener("click" , function() {
 
 
 // END OF NAVBAR JS
+
+// SUBMIT POPUP

@@ -40,6 +40,67 @@
     </header>
     <!-- End of navbar-->
 
+
+    <!-- main -->
+    <section class="section-1">
+        <div class="container container-form">
+            <div>
+                <h1>Submit a recipe</h1>
+            </div>
+            <form action="">
+                <div class="form-row-1">
+                  <div class="form-row-item">
+                    <label for="name">Recipe Name*</label>
+                    <input id="name" type="text">
+                  </div>
+                  <div class="form-row-item">
+                    <label for="select-category">Category*</label>
+                    <select id="select-category">
+                        <option value="Pasta">Pasta</option>
+                        <option value="Pasta">Pizza</option>
+                        <option value="Pasta">Risotto</option>
+                        <option value="Pasta">Fish</option>
+                        <option value="Pasta">Meat</option>
+                        <option value="Pasta">Desserts</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="form-row-item">
+                    <label for="">Difficulty Level</label>
+                      <form-group id="difficultyLevel" name="difficultyLevel">
+                          
+                          <div class="radio-grid">
+                            <label for="Beginner">Beginner</label>
+                            <input type="radio" id="Beginner" name="difficultyLevel">
+                          </div>
+                          <div class="radio-grid">
+                            <label for="Intermediate">Intermediate</label>
+                            <input type="radio" id="Intermediate" name="difficultyLevel">
+                          </div>
+                          <div class="radio-grid">
+                            <label for="Advanced">Advanced</label>
+                            <input type="radio" id="Advanced" name="difficultyLevel">
+                          </div>
+                      </form-group>
+                    
+                  </div>
+                </div>
+                <div class="form-row-3">
+                    <label for="ingredients">Ingredients</label>
+                    <textarea id="ingredients" type="text"></textarea>
+                </div>
+                <div class="form-row-4">
+                    <label for="instructions">Instructions</label>
+                    <textarea id="instructions" type="text"></textarea>
+                </div>
+                <input id="submitButton" type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </section>
+
+
     
     <!-- footer-->
     <footer>

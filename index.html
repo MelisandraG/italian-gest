@@ -19,6 +19,7 @@
             
             <!-- desktop menu -->
             <nav class="is-active">
+                <a href="/index.html">Home</a>
                 <a href="/recipes.html">Recipes</a>
                 <a href="/blog.html">Blog</a>
                 <a href="/submitRecipe.html" id="buttonSubmitRecipe">Submit a recipe</a>
@@ -32,6 +33,7 @@
     
         <!-- mobile menu -->
         <nav class="mobileNav">
+            <a href="/index.html">Home</a>
             <a href="/recipes.html">Recipes</a>
             <a href="/blog.html">Blog</a>
             <a href="/submitRecipe.html" id="buttonSubmitRecipe">Submit a recipe</a>
@@ -44,34 +46,35 @@
 
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <!-- <div class="numbertext">1/3</div> -->
-            <img class="slideOne">
-            <!-- <div class="container"> -->
-                <div class="text">
-                    <h1>About us</h1>
-                    <p class="carousel-article-description">Et odio pellentesque diam volutpat. Pretium lectus quam id leo.</p>
+                <div class="slideOne">
+                    <div class="container">
+                        <div class="text">
+                            <h1>Our Blog</h1>
+                            <p class="carousel-article-description">Check out our latest news and articles if you love italian food and those kinds of things.</p>
+                            <a href="/blog.html" class="button">Find more</a>
+                        </div>
+                    </div>
                 </div>
-            <!-- </div> -->
         </div>
         <div class="mySlides fade">
-            <!-- <div class="numbertext">2/3</div> -->
-            <img class="slideTwo">
-            <!-- <div class="container"> -->
-                <div class="text">
-                    <h1>Nutri-Score</h1>
-                    <p class="carousel-article-description">Et odio pellentesque diam volutpat. Pretium lectus quam id leo.</p>
+            <div class="slideTwo">
+                <div class="container">
+                    <div class="text">
+                        <h1>About us</h1>
+                        <p class="carousel-article-description">MaCheFai is a project aiming to provide authentic italian granny recipes.</p>
+                    </div>
                 </div>
-            <!-- </div> -->
+            </div>
         </div>
         <div class="mySlides fade">
-            <!-- <div class="numbertext">3/3</div> -->
-            <img class="slideThree">
-            <!-- <div class="container"> -->
-                <div class="text">
-                    <h1>Festivals</h1>
-                    <p class="carousel-article-description">Here are 6 food festivals in Italy that are just too delicious to miss.</p>
+            <div class="slideThree">
+                <div class="container">
+                    <div class="text">
+                        <h1>Festivals</h1>
+                        <p class="carousel-article-description">Here are 6 food festivals in Italy that are just too delicious to miss.</p>
+                    </div>
                 </div>
-            <!-- </div> -->
+            </div>
         </div>
 
         <!-- The dots/circles -->
@@ -91,32 +94,32 @@
     <section>
         <div class="container">
             <div class="categories">
-                <div>
+                <div id="categoryTestPasta">
                     <div class="category" id="category1">
                     </div>
                     <p class="category-label-1">Pasta</p>
                 </div>
-                <div>
+                <div id="categoryTestPizza">
                     <div class="category" id="category2">
                     </div>
                     <p class="category-label-1">Pizza</p>
                 </div>
-                <div>
+                <div id="categoryTestRisotto">
                     <div class="category" id="category3">
                     </div>
                     <p class="category-label-1">Risotto</p>
                 </div>
-                <div>
+                <div id="categoryTestFish">
                     <div class="category" id="category4">
                     </div>
                     <p class="category-label-1">Fish</p>
                 </div>
-                <div>
+                <div id="categoryTestMeat">
                     <div class="category" id="category5">
                     </div>
                     <p class="category-label-1">Meat</p>
                 </div>
-                <div>
+                <div id="categoryTestDessert">
                     <div class="category" id="category6">
                     </div>
                     <p class="category-label-1">Desserts</p>
@@ -130,24 +133,28 @@
                 <a href="./blog.html" class="category-label-2">See all</a>
             </div>
             <div class="articles-grid">
-                <div class="grid-article" id="latest-article-1">
-                    <div class="article-thumbnail-text">
-                        <p class="article-title">La Bella Vita</p>
-                        <p class="article-subtitle">Mangiare pasta è la bella vita</p>
+                <a href="/blog.html#article1">
+                    <div class="grid-article" id="latest-article-1">
+                        <div class="article-thumbnail-text">
+                            <p class="article-title">La Bella Vita</p>
+                            <p class="article-subtitle">Mangiare pasta è la bella vita</p>
+                        </div>
+                        <div class="grid-chevron">
+                            <img src="./src/media/icons/chevron.svg" alt="chevron">
+                        </div>
                     </div>
-                    <div class="grid-chevron">
-                        <img src="./src/media/icons/chevron.svg" alt="chevron">
+                </a>
+                <a href="/blog.html#article2">
+                    <div class="grid-article" id="latest-article-2">
+                        <div class="article-thumbnail-text">
+                            <p class="article-title">La Bella Vita</p>
+                            <p class="article-subtitle">Mangiare pasta è la bella vita</p>
+                        </div>
+                        <div class="grid-chevron">
+                            <img src="./src/media/icons/chevron.svg" alt="chevron">
+                        </div>
                     </div>
-                </div>
-                <div class="grid-article" id="latest-article-2">
-                    <div class="article-thumbnail-text">
-                        <p class="article-title">La Bella Vita</p>
-                        <p class="article-subtitle">Mangiare pasta è la bella vita</p>
-                    </div>
-                    <div class="grid-chevron">
-                        <img src="./src/media/icons/chevron.svg" alt="chevron">
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -233,6 +240,7 @@
     <script src="/src/js/index.js"></script>
     <script type="module" src="/src/js/recipes.js"></script>
     <script src="/src/js/carousel.js"></script>
+    <script src="/src/js/cards.js"></script>
    <!-- <script src="/src/js/data.js"></script> -->
 
 </body>

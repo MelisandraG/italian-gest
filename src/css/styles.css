@@ -290,6 +290,14 @@ footer .container .footer-grid-columns .footer-row-3-grid a {
   font-weight: 300;
 }
 
+footer .container .footer-grid-columns .footer-row-3-grid a:hover {
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+}
+
 footer .container .footer-grid-columns .footer-row-4-grid .newsletter-grid{
   display: grid;
   gap: 10px;
@@ -358,6 +366,14 @@ footer .container .footer-grid-columns .footer-row-4-grid {
 footer .container .footer-grid-columns .footer-row-4-grid .social-grid {
   display: grid;
   gap: 10px;
+}
+
+footer .container .footer-grid-columns .footer-row-4-grid .social-grid a:hover {
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
 }
 
 footer .container .footer-grid-columns .footer-row-4-grid .social-grid p {

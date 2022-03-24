@@ -67,8 +67,23 @@
                 </div>
                 <div class="form-row-2">
                   <div class="form-row-item">
-                    <label for="difficultyLevel">Difficulty Level</label>
-                    <input type="checkbox" id="difficultyLevel" name="difficultyLevel">
+                    <label for="">Difficulty Level</label>
+                      <form-group id="difficultyLevel" name="difficultyLevel">
+                          
+                          <div class="radio-grid">
+                            <label for="Beginner">Beginner</label>
+                            <input type="radio" id="Beginner" name="difficultyLevel">
+                          </div>
+                          <div class="radio-grid">
+                            <label for="Intermediate">Intermediate</label>
+                            <input type="radio" id="Intermediate" name="difficultyLevel">
+                          </div>
+                          <div class="radio-grid">
+                            <label for="Advanced">Advanced</label>
+                            <input type="radio" id="Advanced" name="difficultyLevel">
+                          </div>
+                      </form-group>
+                    
                   </div>
                 </div>
                 <div class="form-row-3">
@@ -76,7 +91,7 @@
                     <textarea id="ingredients" type="text"></textarea>
                 </div>
                 <div class="form-row-4">
-                    <label for="instructions">instructions</label>
+                    <label for="instructions">Instructions</label>
                     <textarea id="instructions" type="text"></textarea>
                 </div>
                 <input id="submitButton" type="submit" value="Submit">

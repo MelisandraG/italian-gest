@@ -24,35 +24,3 @@ filterSelect.addEventListener("mouseover", function(){
 
 // END OF FILTER SELECT ARROW
 
-const filterBtnPasta = document.querySelector("#buttonPasta");
-const filterBtnPizza = document.querySelector("#buttonPizza");
-const filterBtnRisotto = document.querySelector("#buttonRisotto");
-const filterBtnMeat = document.querySelector("#buttonMeat");
-const filterBtnFish = document.querySelector("#buttonFish");
-const filterBtnDessert = document.querySelector("#buttonDessert");
-
-filterBtnPasta.addEventListener("click" , function() {
-  filterBtnPasta.classList.toggle("filterToggled");
-});
-
-filterBtnPizza.addEventListener("click" , function() {
-  filterBtnPizza.classList.toggle("filterToggled");
-});
-
-filterBtnRisotto.addEventListener("click" , function() {
-  filterBtnRisotto.classList.toggle("filterToggled");
-});
-
-filterBtnMeat.addEventListener("click" , function() {
-  filterBtnMeat.classList.toggle("filterToggled");
-});
-
-filterBtnFish.addEventListener("click" , function() {
-  filterBtnFish.classList.toggle("filterToggled");
-});
-
-filterBtnDessert.addEventListener("click" , function() {
-  filterBtnDessert.classList.toggle("filterToggled");
-});
-
-

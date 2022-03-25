@@ -48,32 +48,21 @@
         <div class="container">
             <h1>Recipes</h1>
             <div class="filters">
-                <button id="buttonAll" class="filter-all">All recipes</button>
-                <button id="buttonPasta" class="filter-specific">Pasta</button>
-                <button id="buttonPizza" class="filter-specific">Pizza</button>
-                <button id="buttonRisotto" class="filter-specific">Risotto</button>
-                <button id="buttonFish" class="filter-specific">Fish</button>
-                <button id="buttonMeat" class="filter-specific">Meat</button>
-                <button id="buttonDessert" class="filter-specific">Desserts</button>
-                
-                <div class="filter-select">
-                    <select class="filter-diet">
-                        <option value="" selected>Choose a diet</option>
-                        <option value="Vegetarian">Vegetarian</option>
-                        <option value="Pescaterian">Pescaterian</option>
-                        <option value="Vegetarian">Vegetarian</option>
-                    </select>
-                    <svg class="dropdown-arrow" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="dropdown-arrow-path" d="M9.23987 1.43604L5.15368 5.52219L1.06752 1.43603" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>  
-                </div>
+                <button id="buttonAll" class="filter-all" class="filterToggle" onclick="handleClick(this)">All recipes</button>
+                <button id="buttonPasta" class="filter-specific" onclick="handleClick(this)">Pasta</button>
+                <button id="buttonPizza" class="filter-specific" onclick="handleClick(this)">Pizza</button>
+                <button id="buttonRisotto" class="filter-specific" onclick="handleClick(this)">Risotto</button>
+                <button id="buttonFish" class="filter-specific" onclick="handleClick(this)">Fish</button>
+                <button id="buttonMeat" class="filter-specific" onclick="handleClick(this)">Meat</button>
+                <button id="buttonDessert" class="filter-specific" onclick="handleClick(this)">Desserts</button>
+
                 
                 <div class="filter-select">
                     <select class="filter-difficulty">
-                        <option value="" selected>Difficulty level</option>
-                        <option value="Vegetarian">Vegetarian</option>
-                        <option value="Pescaterian">Pescaterian</option>
-                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Difficulty" selected>Difficulty level</option>
+                        <option id="optionBeginner" value="Beginner">Beginner</option>
+                        <option id="optionIntermediate" value="Intermediate">Intermediate</option>
+                        <option id="optionAdvanced" value="Advanced">Advanced</option>
                     </select>
                     <svg class="dropdown-arrow" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="dropdown-arrow-path" d="M9.23987 1.43604L5.15368 5.52219L1.06752 1.43603" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -96,19 +85,36 @@
     <!-- Modal-->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close"><img src="/src/media/icons/close.svg" alt="close"></span>
             <div id="modalImage" class="image-box">  
             </div>
-            <h2 id="modalTitle"></h2>
-            <p>Ingredients:</p>
-            <p id="modalIngredients"></p>
-            <p>Instructions:</p>
-            <p id="modalInstructions"></p>
-            <p>Difficulty level:</p>
-            <p id="modalDifficulty"></p>
-            <p>Diet:</p>
-            <p id="modalDiet"></p>
-
+            <div class="modal-footer-grid">
+                <h1 id="modalTitle"></h1>
+                <div class="modal-info-grid">
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Ingredients:</p>
+                        <p id="modalIngredients"></p>
+                    </div>
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Instructions:</p>
+                        <p id="modalInstructions"></p>
+                    </div>
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Difficulty level:</p>
+                        <p id="modalDifficulty"></p>
+                        <div class="modalDifficultyImageBox">
+                            <img class="modalDifficultyImage" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Diet:</p>
+                        <div class="modalDietBox">
+                            <p id="modalDiet"></p>
+                            <img id="modalDietImage" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end modal-->

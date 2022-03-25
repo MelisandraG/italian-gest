@@ -1,4 +1,5 @@
 localStorage.setItem("recipe", "all")
+console.log(localStorage.recipe)
 
 const testPasta = document.getElementById("categoryTestPasta").addEventListener("click", function (){
     localStorage.setItem("recipe", "pasta")

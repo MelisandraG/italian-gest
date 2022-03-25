@@ -70,6 +70,23 @@ const pastaRecipes = [
       dietImage: "../media/icons/vegetarian.svg",
       nutriScore: "B",
       prepTime: "15 min"
+    },
+    {
+      category: "Pizza",
+      recipeName: "Four Cheese Margherita Pizza",
+      imageUrl:
+        "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      ingredients:
+        "¼ cup olive oil, 1 tablespoon minced garlic, ½ teaspoon sea salt, 8 Roma tomatoes, sliced, 2 (12 inch) pre-baked pizza crusts, 8 ounces shredded Mozzarella cheese",
+      instructions:
+        "Step 1 Stir together olive oil, garlic, and salt; toss with tomatoes, and allow to stand for 15 minutes. Preheat oven to 400 degrees F (200 degrees C). Step 2 Brush each pizza crust with some of the tomato marinade. Sprinkle the pizzas evenly with Mozzarella and Fontina cheeses. Arrange tomatoes overtop, then sprinkle with shredded basil, Parmesan, and feta cheese",
+      difficulty: "Beginner",
+      difficultyImage: "../media/icons/beginner.svg",
+      clock: "../media/icons/clock.svg",
+      diet: "Vegetarian",
+      dietImage: "../media/icons/vegetarian.svg",
+      nutriScore: "B",
+      prepTime: "10 min"
     }
   ];
   
@@ -98,6 +115,20 @@ const pastaRecipes = [
       difficultyImage: "../media/icons/intermediate.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
+      dietImage: "../media/icons/vegetarian.svg",
+      nutriScore: "C",
+      prepTime: "20 min",
+      },
+      {
+      category: "Risotto",
+      recipeName:"Bacon Risotto",
+      imageUrl:"https://images.unsplash.com/photo-1637361874063-e5e415d7bcf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      ingredients:"½ pound bacon, diced, 5 cups chicken stock, 2 tablespoons butter, ½ onion, diced, 4 cloves garlic, minced",
+      instructions:"Step 1 Cook and stir the diced bacon in a large skillet over medium heat until browned, about 10 minutes. Drain the bacon and reserve. Step 2 Bring the chicken stock to a boil in a saucepan over high heat; reduce heat to low to keep the chicken stock hot. Step 3 Heat 2 tablespoons butter in a large, heavy-bottomed saucepan over medium-high heat. Add the onion and garlic; cook and stir until the onion begins to turn golden brown at the edges, about 2 minutes",
+      difficulty: "Intermediate",
+      difficultyImage: "../media/icons/intermediate.svg",
+      clock: "../media/icons/clock.svg",
+      diet: "",
       dietImage: "../media/icons/vegetarian.svg",
       nutriScore: "C",
       prepTime: "20 min",
@@ -133,6 +164,20 @@ const pastaRecipes = [
       nutriScore: "E",
       prepTime: "30 min"
       }
+      { 
+        category: "Dessert",
+        recipeName:"Italian Almond Macaroons",
+        imageUrl:"https://images.unsplash.com/photo-1614205570481-996aa3941a42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=890&q=80",
+        ingredients:"16 ounces almond paste; 6 egg whites; 1 cup white sugar; 1 cup confectioners' sugar; ½ cup sifted all-purpose flour",
+        instructions:"Step 1 Preheat the oven to 300 degrees F (150 degrees C). Line cookie sheets with parchment paper. Step 2 In a medium bowl, stir together the almond paste, egg whites and lemon extract until smooth. Sift together the white sugar and confectioners' sugar, then combine sugars with the flour and salt. Stir the dry ingredients into the egg mixture along with the food coloring of your choice. Drop by teaspoonfuls, two inches apart, onto the prepared cookie sheets. Sprinkle some nuts on top of each cookie.",
+        difficulty: "Advanced",
+        difficultyImage: "../media/icons/advanced.svg",
+        clock: "../media/icons/clock.svg",
+        diet: "",
+        dietImage: "../media/icons/noImage.svg",
+        nutriScore: "E",
+        prepTime: "25 min"
+        }
   ];
   const fishRecipes =[
       {
@@ -192,7 +237,22 @@ const pastaRecipes = [
       dietImage: "../media/icons/noImage.svg",
       nutriScore: "E",
       prepTime: "2 hrs"
+    },
+    { 
+      category: "Meat",
+      recipeName:"Three-Meat Italian Meatballs",
+      imageUrl:"https://images.unsplash.com/photo-1625147541750-dfecb0a624a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      ingredients:"1 pound ground beef; 1 pound ground turkey; 1 pound ground Italian sausage; 1 large onion, diced; 2 eggs; ½ cup Italian-style seasoned bread crumbs",
+      instructions:"Step 1 Preheat oven to 350 degrees F (175 degrees C).; Step 2 Combine ground meat, onion, eggs, bread crumbs, oats, and seasoning in a large bowl. Shape into 2-inch diameter balls.; Step 3 Heat enough vegetable oil in a large saute pan to be 1/2 inch deep. Brown meatballs in hot oil for about 5 minutes. Transfer to a glass baking dish.",
+      difficulty: "Intermediate", 
+      difficultyImage: "../media/icons/intermediate.svg",
+      clock: "../media/icons/clock.svg",
+      diet: "",
+      dietImage: "../media/icons/noImage.svg",
+      nutriScore: "E",
+      prepTime: "40 min"
     }
+
   ];
 
 export const allRecipes = [pastaRecipes, pizzaRecipes, risottoRecipes, dessertRecipes, fishRecipes, meatRecipes];

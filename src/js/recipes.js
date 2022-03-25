@@ -268,6 +268,40 @@ function categoryTest(allRecipes, cards){
   filterObject(allRecipes, "category", "Pasta");
 }
 
+const selectBtn = document.querySelector(".filter-difficulty");
+console.log(selectBtn);
+
+selectBtn.addEventListener("change", (event, allRecipes, cards) => {
+    const target = event.target.value;
+    switch (target) {
+      
+      case "Beginner":
+        while(cards.firstChild){
+          cards.removeChild(cards.firstChild);
+          };
+        filterObject(allRecipes, "difficulty", "Beginner");
+        break;
+      case "Intermediate":
+        while(cards.firstChild){
+          cards.removeChild(cards.firstChild);
+          };
+        filterObject(allRecipes, "difficulty", "Intermediate");
+        break;
+      case "Advanced":
+        while(cards.firstChild){
+          cards.removeChild(cards.firstChild);
+          };
+        filterObject(allRecipes, "difficulty", "Advanced");
+        break;
+      default:
+        console.log("Choose the difficulty")
+    }
+  
+});
+
+
+  
+
 
 
 //{location.href = "../../recipes.html"; while(cards.firstChild){ cards.removeChild(cards.firstChild);}; filterObject(allRecipes, "category", "Pasta");}

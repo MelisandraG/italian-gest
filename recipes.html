@@ -48,15 +48,15 @@
         <div class="container">
             <h1>Recipes</h1>
             <div class="filters">
-                <button id="buttonAll" class="filter-all">All recipes</button>
-                <button id="buttonPasta" class="filter-specific">Pasta</button>
-                <button id="buttonPizza" class="filter-specific">Pizza</button>
-                <button id="buttonRisotto" class="filter-specific">Risotto</button>
-                <button id="buttonFish" class="filter-specific">Fish</button>
-                <button id="buttonMeat" class="filter-specific">Meat</button>
-                <button id="buttonDessert" class="filter-specific">Desserts</button>
+                <button id="buttonAll" class="filter-all" class="filterToggle" onclick="handleClick(this)">All recipes</button>
+                <button id="buttonPasta" class="filter-specific" onclick="handleClick(this)">Pasta</button>
+                <button id="buttonPizza" class="filter-specific" onclick="handleClick(this)">Pizza</button>
+                <button id="buttonRisotto" class="filter-specific" onclick="handleClick(this)">Risotto</button>
+                <button id="buttonFish" class="filter-specific" onclick="handleClick(this)">Fish</button>
+                <button id="buttonMeat" class="filter-specific" onclick="handleClick(this)">Meat</button>
+                <button id="buttonDessert" class="filter-specific" onclick="handleClick(this)">Desserts</button>
                 
-                <div>
+                <!--<div>
                     <select class="filter-diet">
                         <option value="" selected>Choose a diet</option>
                         <option value="Vegetarian">Vegetarian</option>
@@ -64,14 +64,14 @@
                         <option value="Vegetarian">Vegetarian</option>
                     </select>
                     <img class="dropdown-arrow" src="/src/media/icons/down_arrow.svg" alt="">
-                </div>
+                </div>-->
                 
                 <div>
                     <select class="filter-difficulty">
-                        <option value="" selected>Difficulty level</option>
-                        <option value="Vegetarian">Vegetarian</option>
-                        <option value="Pescaterian">Pescaterian</option>
-                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Difficulty" selected>Difficulty level</option>
+                        <option id="optionBeginner" value="Beginner">Beginner</option>
+                        <option id="optionIntermediate" value="Intermediate">Intermediate</option>
+                        <option id="optionAdvanced" value="Advanced">Advanced</option>
                     </select>
                     <img class="dropdown-arrow" src="/src/media/icons/down_arrow.svg" alt="">
                 </div>

@@ -12,4 +12,13 @@ hamburger.addEventListener("click" , function() {
 
 // END OF NAVBAR JS
 
+const filters = document.querySelector(".filters");
+
+function handleClick(trigger) {
+  filters.querySelectorAll('button').forEach(element => {
+    element.classList.toggle('filterToggle', trigger === element);
+  });
+}
+
+
 // SUBMIT POPUP

@@ -635,10 +635,10 @@ header .container .hamburger.isActive .bar {
 .filter-specific, .filter-diet , .filter-difficulty {
   background-color: transparent;
   border: 1px solid black !important;
+  cursor: pointer;
 }
 
 .filter-difficulty , .filter-diet {
-  /*background: url("../media/icons/down_arrow.svg") no-repeat center right 0.75rem;*/
   padding: 8px 42px 8px 19px !important;
 }
 
@@ -646,6 +646,11 @@ header .container .hamburger.isActive .bar {
   appearance: none;
   border-bottom:1px solid #ddd;
   padding:12px 0px 10px 24px;
+}
+
+.filterToggle {
+  background-color: black;
+  color: white;
 }
 
 select::before {
@@ -782,6 +787,21 @@ select::before {
 }
 .diet-img {
   width: 25px;
+}
+
+@media only screen and (min-width: 480px) {
+  .card-img {
+    min-height: 230px;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-img {
+    min-height: 180px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

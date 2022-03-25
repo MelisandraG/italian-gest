@@ -92,19 +92,36 @@
     <!-- Modal-->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close"><img src="/src/media/icons/close.svg" alt="close"></span>
             <div id="modalImage" class="image-box">  
             </div>
-            <h1 id="modalTitle"></h1>
-            <p class="modalLabel">Ingredients:</p>
-            <p id="modalIngredients"></p>
-            <p class="modalLabel">Instructions:</p>
-            <p id="modalInstructions"></p>
-            <p class="modalLabel">Difficulty level:</p>
-            <p id="modalDifficulty"></p>
-            <p class="modalLabel">Diet:</p>
-            <p id="modalDiet"></p>
-
+            <div class="modal-footer-grid">
+                <h1 id="modalTitle"></h1>
+                <div class="modal-info-grid">
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Ingredients:</p>
+                        <p id="modalIngredients"></p>
+                    </div>
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Instructions:</p>
+                        <p id="modalInstructions"></p>
+                    </div>
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Difficulty level:</p>
+                        <p id="modalDifficulty"></p>
+                        <div class="modalDifficultyImageBox">
+                            <img class="modalDifficultyImage" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-info-grid-item">
+                        <p class="modalLabel">Diet:</p>
+                        <div class="modalDietBox">
+                            <p id="modalDiet"></p>
+                            <img id="modalDietImage" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end modal-->

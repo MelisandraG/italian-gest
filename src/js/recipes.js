@@ -50,7 +50,6 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
   clock.classList.add("clock");
   cardFooterLeft1.appendChild(clock);
 
-  console.log(prepTime);
   const preparationTime = document.createElement("p");
   preparationTime.classList.add("prep-time");
   preparationTime.innerHTML = prepTime;
@@ -65,12 +64,18 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
   difficultyImg.src = difficultyImage;
   difficultyImg.classList.add("difficulty-img");
   cardFooterLeft2.appendChild(difficultyImg);
-
+  
+  const CardDietImage = document.createElement("img");
+  CardDietImage.src = dietImage;
+  CardDietImage.classList.add("diet-img");
+  cardFooterRight.appendChild(CardDietImage);
 
 
   let modal = document.querySelector(".modal");
   let span = document.getElementsByClassName("close")[0];
   let title = document.querySelector("#title");
+  let modalDifficultyImage = document.querySelector(".modalDifficultyImage");
+  let modalDietImage = document.querySelector("#modalDietImage");
 
   card.onclick = function(){
       modal.style.display = "flex";
@@ -80,7 +85,9 @@ function createRecipeCard(recipeName, imageUrl, ingredients, instructions, diffi
       modalIngredients.innerHTML = ingredients;
       modalInstructions.innerHTML = instructions;
       modalDifficulty.innerHTML = difficulty;
+      modalDifficultyImage.src = "./src/media/icons/" + difficulty + ".svg";
       modalDiet.innerHTML = diet;
+      modalDietImage.src = dietImage;
   }
 
   card.addEventListener("click", function() {

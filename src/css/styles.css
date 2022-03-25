@@ -731,6 +731,11 @@ select::before {
   padding: 10px 10px;
 }
 
+.card-footer{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .clock {
   width: 15px;
 }
@@ -757,6 +762,12 @@ select::before {
   padding-top: 10px;
 }
 
+.card-footer-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 .card-body h2 {
   padding: 5px;
   font-size: 1.1rem;
@@ -768,6 +779,9 @@ select::before {
   height: 50px;
   background-color: lightblue;
   width: 100%;
+}
+.diet-img {
+  width: 25px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -791,6 +805,9 @@ select::before {
   }
   .difficulty-img {
     width: 115px;
+  }
+  .diet-img {
+    width: 40px;
   }
 
 }
@@ -830,19 +847,38 @@ select::before {
 .modal-content {
   background-color: #fefefe;
   padding: 20px;
-  border: 1px solid #888;
   width: 100%; /* Could be more or less, depending on screen size */
-  height: fit-content;
+  min-height: 595px;
   display: grid;
   gap: 20px;
-  margin: 30px;
+  margin: 20px;
+  margin-top: 50px !important;
   border-radius: 20px;
   margin-top: 80px;  
+  filter: drop-shadow(2px 4px 4px #858585);
+}
+
+.modal-footer-grid{
+  display: grid;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.modal-info-grid{
+  display: grid;
+  gap: 20px;
+}
+
+.modal-info-grid-item {
+  display: grid;
+  gap: 10px;
 }
 
 #modalInstructions, #modalIngredients {
   font-size: 0.8rem;
   line-height: 1.4rem;
+  font-weight: 500;
+  color: #8d8d8d;
 }
 
 /* .image-box {
@@ -867,14 +903,30 @@ select::before {
   font-weight: 600;
 }
 
+.modalDifficultyImage{
+  width: 100px;
+  margin-left: -1px;
+}
+
+.modalDietBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#modalDietImage {
+  width: 30px;
+  order: -1;
+}
+
 /* The Close Button */
 .close {
   color: FFFFFF;
   position: absolute;
   font-size: 96px;
   font-weight: 100;
-  right: 25px;
-  top: -25px;
+  right: -7px;
+  top: -39px;
 }
 
 .close:hover,
@@ -882,90 +934,109 @@ select::before {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.close img {
+  width: 30px;
 }
 
 @media only screen and (min-width: 1024px) {
 
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
 
-#myModal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  justify-content: center;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+  #myModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    justify-content: center;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  padding: 30px;
-  border: 1px solid #888;
-  width: 45%; /* Could be more or less, depending on screen size */
-  height: fit-content;
-  display: grid;
-  gap: 20px;
-  margin: 150px;
-  border-radius: 30px;
-}
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 45%; /* Could be more or less, depending on screen size */
+    height: fit-content;
+    display: grid;
+    gap: 20px;
+    margin: 150px;
+    border-radius: 30px;
+  }
 
-#modalInstructions, #modalIngredients {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-}
+  .modal-info-grid{
+    grid-template-columns: 1fr 2fr;
+  }
+  .modal-info-grid-item{
+    grid-template-rows: 1.2rem;
+  }
 
-.image-box {
-  height: 350px;
-}
+  #modalInstructions, #modalIngredients {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
 
-#modalImage{
-  width: 100%;
-  border-radius: 10px;
-  height: 300px;
-  background-position: center center;
-  background-size: cover;
-}
+  #modalIngredients {
+    max-width: 20ch;
+  }
 
-.modalLabel {
-  font-size: 18px;
-  font-weight: 600;
-}
+  .image-box {
+    height: 350px;
+  }
+
+  #modalImage{
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .modalLabel {
+    font-size: 18px;
+    font-weight: 600;
+  }
 
 
-/* The Close Button */
-.close {
-  color: FFFFFF;
-  position: absolute;
-  font-size: 128px;
-  font-weight: 100;
-  right: 120px;
-  top: 30px;
-}
+  /* The Close Button */
+  .close {
+    color: FFFFFF;
+    position: fixed;
+    font-size: 128px;
+    font-weight: 100;
+    right: -55%;
+    top: -11px;
+  }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close img {
+    width: 70px;
+  }
 
 }
 /* END MODAL*/

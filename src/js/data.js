@@ -11,7 +11,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/beginner.svg",
       clock: "../media/icons/clock.svg",
       diet: "",
-      dietImage: "../media/icons/noImage.svg",
+      dietImage: "./src/media/icons/noImage.jpg",
       nutriScore: "A",
       prepTime: "10 min",
 
@@ -28,7 +28,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/advanced.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
-      dietImage: "../media/icons/vegetarian.svg",
+      dietImage: "./src/media/icons/vegetarian.svg",
       nutriScore: "B",
       prepTime: "20 min"
     }
@@ -47,7 +47,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/intermediate.svg",
       clock: "../media/icons/clock.svg",
       diet: "",
-      dietImage: "../media/icons/noImage.svg",
+      dietImage: "./src/media/icons/noImage.jpg",
       nutriScore: "C",
       prepTime: "15 min"
     },
@@ -63,7 +63,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/Intermediate.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
-      dietImage: "../media/icons/vegetarian.svg",
+      dietImage: "./src/media/icons/vegetarian.svg",
       nutriScore: "B",
       prepTime: "15 min"
     }
@@ -80,7 +80,7 @@ const pastaRecipes = [
         difficultyImage: "../src/media/icons/advanced.svg",
         clock: "../media/icons/clock.svg",
         diet: "",
-        dietImage: "../media/icons/noImage.svg",
+        dietImage: "./src/media/icons/noImage.jpg",
         nutriScore: "A",
         prepTime: "20 min"
       },
@@ -94,7 +94,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/intermediate.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
-      dietImage: "../media/icons/vegetarian.svg",
+      dietImage: "./src/media/icons/vegetarian.svg",
       nutriScore: "C",
       prepTime: "20 min",
       }
@@ -111,7 +111,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/advanced.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
-      dietImage: "../media/icons/vegetarian.svg",
+      dietImage: "./src/media/icons/vegetarian.svg",
       nutriScore: "D",
       prepTime: "10 min"
       },
@@ -125,7 +125,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/intermediate.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
-      dietImage: "../media/icons/vegetarian.svg",
+      dietImage: "./src/media/icons/vegetarian.svg",
       nutriScore: "E",
       prepTime: "30 min"
       }
@@ -141,7 +141,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/Beginner.svg",
       clock: "../media/icons/clock.svg",
       diet: "",
-      dietImage: "../media/icons/noImage.svg",
+      dietImage: "./src/media/icons/noImage.jpg",
       nutriScore: "E",
       prepTime: "90 min"
       },
@@ -155,7 +155,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/advanced.svg",
       clock: "../media/icons/clock.svg",
       diet: "",
-      dietImage: "../media/icons/noImage.svg",
+      dietImage: "./src/media/icons/noImage.jpg",
       nutriScore: "D",
       prepTime: "75 min"
       }
@@ -171,7 +171,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/advanced.svg",
       clock: "../media/icons/clock.svg",
       diet: "",
-      dietImage: "../media/icons/noImage.svg",
+      dietImage: "./src/media/icons/noImage.jpg",
       nutriScore: "E",
       prepTime: "5 hrs"
     },
@@ -185,7 +185,7 @@ const pastaRecipes = [
       difficultyImage: "../src/media/icons/advanced.svg",
       clock: "../media/icons/clock.svg",
       diet: "",
-      dietImage: "../media/icons/noImage.svg",
+      dietImage: "./src/media/icons/noImage.jpg",
       nutriScore: "E",
       prepTime: "2 hrs"
     }

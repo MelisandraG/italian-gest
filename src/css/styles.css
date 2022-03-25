@@ -412,7 +412,9 @@ header .container .hamburger.isActive .bar {
   .carousel-article-description {
     margin: initial;
   }
-
+  .prev, .next{
+    width: 400px;
+  }
 
 }
 
@@ -429,11 +431,6 @@ header .container .hamburger.isActive .bar {
   grid-template-rows: 1fr;
 }
 
-.category {
-  background-color: black;
-  height: 180px;
-}
-
 .categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -443,11 +440,16 @@ header .container .hamburger.isActive .bar {
   margin-bottom: 50px;
 }
 
+.categories > div {
+  cursor: pointer;
+}
+
 .category {
   background-size: cover;
   width: 100%;
   height: 91.66px;
   border-radius: 10px;
+  box-shadow: rgb(143 145 147 / 20%) 4px 4px 12px;
 }
 
 #category1{
@@ -495,6 +497,14 @@ header .container .hamburger.isActive .bar {
   display: flex;
 }
 
+.latest-articles a:hover {
+  opacity: 0.6;
+  transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+}
+
 .articles-grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -503,6 +513,15 @@ header .container .hamburger.isActive .bar {
   gap: 20px;
   margin-bottom: 50px;
 }
+
+.articles-grid a {
+  filter: drop-shadow(2px 4px 4px #E2E2E2);
+}
+
+.articles-grid a:hover > .grid-article {
+  background-image: url(../media/latestArticle2.png), linear-gradient(90deg, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.5) 100%);
+}
+
 .grid-article {
   background-size: cover;
   width: 100%;
@@ -545,7 +564,7 @@ header .container .hamburger.isActive .bar {
   background-blend-mode:color;
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1024px) {
   .categories {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -575,13 +594,13 @@ header .container .hamburger.isActive .bar {
   .article-subtitle{
     font-size: 20px;
     color: var(--primary-color);
-}
-.grid-chevron{
-  padding: 35px;
-}
-.grid-chevron img{
-  height: 40px;
-}
+  }
+  .grid-chevron{
+    padding: 35px;
+  }
+  .grid-chevron img{
+    height: 25px;
+  }
 }
 /* END SECTION 1 */
 
@@ -761,7 +780,7 @@ select::before {
     min-height: 480px;
   }
   .card-img {
-    height: 200px;
+    height: 240px;
   }
   .card-body, .card-footer {
     padding: 10px 20px 20px 20px;
@@ -771,7 +790,7 @@ select::before {
     padding: 5px;
   }
   .difficulty-img {
-    width: 170px;
+    width: 115px;
   }
 
 }
@@ -836,6 +855,16 @@ select::before {
   height: 200px;
   background-position: center center;
   background-size: cover;
+}
+
+#modalTitle {
+  line-height: 1.1;
+  max-width: 14ch;
+}
+
+.modalLabel {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* The Close Button */
@@ -914,6 +943,12 @@ select::before {
   background-position: center center;
   background-size: cover;
 }
+
+.modalLabel {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 
 /* The Close Button */
 .close {
@@ -1393,19 +1428,23 @@ footer .copyright {
   height: 200px;
 }
 .articleOneMainTitle, .articleTwoMainTitle{
-  font-size: 40px;
   line-height: 1;
   margin-bottom: 10px;
 }
 
 .articleOneMainSubTitle, .articleTwoMainSubTitle{
   font-size: 18px;
+  font-weight: 500;
+  color: #8d8d8d;
 }
 .articleOneDate, .articleTwoDate{
   font-size: 15px;
+  color: #8d8d8d;
 }
 .articleOneText, .articleTwoText{
-  text-align: justify;
+  text-align: left;
+  line-height: 1.5;
+  color: #8d8d8d;
 }
 @media only screen and (min-width: 1024px) {
   .blogHeaderContainer{
@@ -1427,8 +1466,8 @@ footer .copyright {
     grid-template-columns: 1fr 2fr;
     margin-top: 30px;
     gap: 20px;
+    row-gap: 60px;
     margin-bottom: 50px;
-
   }
   .articleOneHeaderText, .articleTwoHeaderText{
     grid-column: 1/3
@@ -1436,13 +1475,10 @@ footer .copyright {
   .articleOneHeaderimage, .articleTwoHeaderimage{
     height:364.17px;
   }
-  .articleOneMainTitle, .articleTwoMainTitle{
-    font-size: 60px;
-  }
-  .articleOneMainSubTitle, .articleTwoMainSubTitle{
-    font-size: 20px;
-  }
   .articleOneHeaderTitle, .articleTwoHeaderTitle{
     height: auto;
+  }
+  .articleOneText, .articleTwoText{
+    text-align: justify;
   }
 }

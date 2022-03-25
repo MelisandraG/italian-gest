@@ -2,8 +2,7 @@ const pastaRecipes = [
     {
       category: "Pasta",
       recipeName: "Pasta alla Gricia",
-      imageUrl:
-        "https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+      imageUrl: "../src/media/pastaAllaGricia.png",
       ingredients:
         "1 tablespoon extra-virgin olive oil; 6 ounces guanciale (salt-cured pork jowl), cut into ¾-inch pieces; 8 ounces rigatoni; Kosher salt; 2 teaspoons coarsely ground black pepper, preferably ground with a mortar and pestle; 3 ounces Pecorino Romano, finely grated on the small holes of a box grater (about 3 cups)",
       instructions:
@@ -20,8 +19,7 @@ const pastaRecipes = [
     {
       category: "Pasta",
       recipeName: "Vegan Pasta alla Vodka (Sorta)",
-      imageUrl:
-        "https://images.unsplash.com/photo-1585672840829-d4ed3abbfb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1404&q=80",
+      imageUrl: "../src/media/pastaAllaVodka.png",
       ingredients:
         "4 (very generous) servings; ¾cup raw cashews; ¼ cup extra-virgin olive oil, plus more for serving; 1 large onion, thinly sliced; 5 garlic cloves, coarsely chopped; ½ tsp. Diamond Crystal or ¼ tsp. Morton kosher salt; ½ tsp. crushed red pepper flakes; 1 4.5-oz. tube or ½ cup double-concentrated or regular tomato paste; 1 14.5-oz. can whole peeled tomatoes; 1 lb. short, chunky pasta (such as rigatoni, conchiglie, or casarecce); ¼ cup vodka; Torn basil leaves (for serving); Vegan Parmesan (for serving; optional); Freshly ground black pepper; 1 lemon, sliced into wedges",
       instructions:
@@ -40,8 +38,7 @@ const pastaRecipes = [
     {
       category: "Pizza",
       recipeName: "Detroit-Style Pepperoni Pizza",
-      imageUrl:
-        "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
+      imageUrl:"../src/media/pepperoniPizza.png",
       ingredients:
         "Extra-virgin olive oil (for pan); Bread flour (for surface); ½ batch (360 g) Master Bread Dough; 8 oz. low-moisture mozzarella or brick cheese; ¾ cup store-bought marinara sauce; 4 oz. pepperoni, sliced; ½ tsp. dried oregano; ½ cup (lightly packed) basil leaves",
       instructions:
@@ -57,14 +54,13 @@ const pastaRecipes = [
     {
       category: "Pizza",
       recipeName: "Pizza Dough",
-      imageUrl:
-        "https://images.unsplash.com/photo-1617343251257-b5d709934ddd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      imageUrl:"../src/media/italianPizzaDough.png",
       ingredients:
         "1 ¼-oz. envelope active dry yeast (about 2¼ tsp.); 2 teaspoons sugar; 2 tablespoons kosher salt; 3 ½ cups 00 flour, plus more for surface; ¼ cup extra-virgin olive oil, plus more for bowl; Semolina flour (for dusting)",
       instructions:
         "Step 1 Whisk yeast, sugar, and 1¼ cups warm (not hot) water in a small bowl. Let stand in a warm place until yeast is foamy, about 10 minutes.; Step 2 Mix salt and 3½ cups 00 flour in the bowl of a stand mixer fitted with the dough hook. With the mixer on low speed, mix in yeast mixture and ¼ cup oil. Continue to mix, gradually increasing speed to medium-high, until dough is smooth and elastic.; Step 3 Transfer dough to a lightly floured surface and give it a few turns by hand to finish kneading it; it will still be slightly sticky. Transfer dough to a large oiled bowl; turn to coat, cover with a kitchen towel or plastic wrap, and let rise in a warm place until doubled in size, 1–1½ hours.; Step 4 Punch down dough to deflate and turn out onto a well-floured work surface. Divide into 8 pieces (about 4 oz. each); shape each into a ball. Cover with a kitchen towel and let stand 15 minutes before stretching dough. Or, transfer balls to a floured rimmed baking sheet and chill until cold.; Step 5 Dust a large work surface with a mixture of 00 flour and semolina flour. If dough has been chilled, transfer a ball to work surface and let stand until still cool but not cold (it should register about 60° on an instant-read thermometer).; Step 6 Working one at a time, press and stretch dough balls into 9”–10” rounds, sprinkling with more 00 and semolina flour as needed to keep dough from sticking (use as little as you can). Using one hand as a guide, shape a slightly thicker rim around edge. If dough resists or shrinks back as you shape it, let it rest before proceeding; do not overwork dough. (Alternatively, you can roll dough out with a rolling pin.);Step 7 Heat a 10”–12” cast-iron skillet over medium heat until very hot, about 5 minutes. Working one at a time, carefully transfer dough to skillet and cook, flipping once and rotating crust to encourage even cooking, until barely tan and browned in a few spots, about 5 minutes total. Press any thicker parts against the pan to help cook through. Transfer crusts to wire racks or baking sheets as you work, brushing off any excess flour. Let cool.; Step 8 Do ahead: Parbaked crusts can be refrigerated overnight or frozen, well wrapped, up to 2 weeks.",
-      difficulty: "Advanced",
-      difficultyImage: "../src/media/icons/advanced.svg",
+      difficulty: "Intermediate",
+      difficultyImage: "../src/media/icons/Intermediate.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
       dietImage: "../media/icons/vegetarian.svg",
@@ -77,7 +73,7 @@ const pastaRecipes = [
       {
         category: "Risotto",
         recipeName:"Shrimp Scampi with Green Onions and Orzo",
-        imageUrl:"https://images.unsplash.com/photo-1581073746562-e7fd2422f0eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
+        imageUrl:"../src/media/ShrimpScampi.png",
         ingredients:"3/4 cup orzo (rice-shaped pasta); 4 tablespoons (1/2 stick) butter, divided; 2 tablespoons olive oil; 2 garlic cloves, peeled; 1 pound uncooked large shrimp, peeled, deveined; 4 green onions, thinly sliced; 1/3 cup dry white wine",
         instructions:"Step 1 Cook orzo in large saucepan of boiling salted water until tender but still firm to bite, stirring occasionally.; Step 2 Meanwhile, melt 2 tablespoons butter with oil in heavy large skillet over medium-high heat. Using garlic press, squeeze in garlic; stir 10 seconds. Add shrimp and sauté 2 minutes. Add green onions and toss until shrimp are just opaque in center, about 1 minute longer. Add wine and toss until wine boils, about 1 minute. Mix in remaining 2 tablespoons butter and season to taste with salt and pepper.; Step 3 Drain pasta; transfer to large bowl. Top with shrimp and onion-garlic butter.",
         difficulty: "Advanced",
@@ -91,7 +87,7 @@ const pastaRecipes = [
       { 
       category: "Risotto",
       recipeName:"Risotto With Mushrooms and Thyme",
-      imageUrl:"https://images.unsplash.com/photo-1637361874063-e5e415d7bcf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      imageUrl:"../src/media/RisottoWithMushrooms.png",
       ingredients:"1 Tbsp. kosher salt, plus more;6 Tbsp. extra-virgin olive oil; ½ large white onion, finely chopped; 2 cups carnaroli or Japanese sushi rice; 1 cup dry white wine; 5 Tbsp. unsalted butter, cut into pieces; 2 oz. Parmesan, finely grated; ¼ cup extra-virgin olive oil; 1 lb. mushrooms (such as shiitake, crimini, or maitake), trimmed, caps torn into 2 pieces; Kosher salt; Freshly ground pepper; 5 sprigs thyme; 5 garlic cloves, crushed; 2 Tbsp. unsalted butter; 2 Tbsp. white wine vinegar or fresh lemon juice; 1 oz. Parmesan, finely grated",
       instructions:"Step 1 Combine 1 Tbsp. salt and 10 cups water in a medium pot. Bring to a boil, then reduce heat to medium to maintain a bare simmer.; Step 2 heat oil in a 6-qt. Dutch oven over medium. Add onion and a pinch of salt and cook, stirring often, until onion is translucent and starting to soften, 6–8 minutes. Add ½ cup water and cook, stirring often, until water evaporates and onion is sizzling in oil and tender, about 5 minutes. Taste onion; if it’s still firm at all, add a splash of water and continue to cook until meltingly soft.; Step 3 Add rice and stir well to coat with oil. Cook, stirring constantly, until grains are translucent around the edges and make a clattering sound when they hit against the pot, about 5 minutes. Add wine and another pinch of salt. Bring to a simmer and cook, stirring occasionally, until wine evaporates, about 2 minutes.; Step 4 Reduce heat to medium, then add hot salted water to rice in ¾-cup increments, stirring constantly and allowing liquid to absorb fully before adding more, until rice is al dente and suspended in a fluid, not-too-thick creamy liquid, 25–30 minutes. It should take 2–3 minutes for each addition to be absorbed; if things are moving faster than this, reduce heat to medium-low. The finished texture should be more of a liquid than a solid. Start checking rice about 15 minutes after the first water addition; the grains should be tender but not mushy, with a slightly firm center that doesn’t leave a chalky residue between your teeth after tasting. Do not overcook!;Step 5 Remove pot from heat, add butter, and stir until melted. Gradually add Parmesan, stirring until cheese is melted and liquid is creamy but very loose; stir in more hot salted water if needed. Taste and season with more salt.; Step 6 Heat oil in a large skillet over medium-high until shimmering. Add mushrooms; cook, tossing occasionally, until they begin to soften and release some liquid, about 3 minutes. Season with salt and pepper; cook, tossing occasionally, until deeply browned and tender, 8–10 minutes. Add thyme, garlic, and butter and cook, tossing occasionally until garlic softens and  butter is golden brown, about 3 minutes. Remove from heat and add vinegar. Toss to coat, scraping up any browned bits. Pluck out thyme.; Step 7 Divide risotto among warm bowls. Top each with a few grinds of pepper and spoon mushroom mixture over. Serve with Parmesan alongside.",
       difficulty: "Intermediate",
@@ -107,8 +103,8 @@ const pastaRecipes = [
   const dessertRecipes =[
       {
       category: "Dessert",
-      recipeName:"Classic Cannoli",
-      imageUrl:"https://images.unsplash.com/photo-1611292984550-6dd8def2e668?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80",
+      recipeName:"Classic Sicilian Cannoli",
+      imageUrl:"../src/media/classicSicilianCannoli.png",
       ingredients:"150g plain flour; 1 tbsp golden caster sugar; large pinch bicarbonate of soda; ½ tsp cinnamon; 1 tsp cocoa powder; 30g butter; 1 egg, separated; 50ml dry marsala or white wine; rapeseed oil or sunflower oil for deep-frying (see tip); 50g dark chocolate, melted; handful pistachio kernels, finely chopped; icing sugar, to dust; 250g ricotta, drained and beaten until fluffy; 100g mascarpone; 2 tbsp finely chopped candied peel; 2 tbsp icing sugar; cannoli moulds",
       instructions:"STEP 1 Tip the flour, sugar, bicarb, cinnamon and cocoa (if using) into a bowl with a pinch of salt. Add the butter and rub it into the dry ingredients until there are no more lumps. Mix the egg yolk and marsala and add this to the bowl, then mix the whole lot together and knead to a smooth dough. Wrap and rest in the fridge. (Can be made ahead and fried the next day.); STEP 2 Fill a deep-fat fryer, wok or deep saucepan a third of the way up with oil. Cut the dough into pieces and, working one piece at a time, roll them out as thinly as you can – use a pasta machine if you have one. Heat the oil and keep an eye on it until it reaches 180C. Lay the dough out on a lightly floured surface and cut out circles about 11cm across. Wrap each one around a cannoli mould, using some of the egg white to stick the top edge down and they're ready for frying.It's important to take care when cooking with hot oil. Read our guide on how to deep-fry safely to avoid accidents in the kitchen.; STEP 3 Deep-fry the cannoli (with their moulds) one at a time, making sure they cook all over. They should take about 45-60 seconds in all and should be visibly golden brown (keep cooking a little longer if they aren't) and the dough will bubble and blister. Carefully take each one out of the oil using the tongs and shake the cannoli off the mould very carefully onto kitchen paper. As you fry each one, make sure the oil stays at 180C at all times and doesn’t get any hotter. These will keep for 2-3 days in an airtight container.; STEP 4 When the cannoli are cold, dip the end of each one into chocolate, then dip some of those into the pistachios. Leave to cool and harden. Beat the ricotta and mascarpone together, then stir in the candied peel and sugar. Spoon the mixture into a piping bag with a wide star nozzle and pipe it into the cannoli. Serve soon after filling.",
       difficulty: "Advanced",
@@ -122,11 +118,11 @@ const pastaRecipes = [
       { 
       category: "Dessert",
       recipeName:"Quick & easy tiramisu",
-      imageUrl:"https://images.unsplash.com/photo-1593545024944-b3c74435b9f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      imageUrl:"../src/media/quickEasyTiramisu.png",
       ingredients:"3 tsp instant coffee granules; 3 tbsp coffee liqueur (or Camp Chicory & Coffee Essence); 250g tub mascarpone; 85g condensed milk; 1 tsp vanilla extract; 4-6 sponge fingers; 1 tbsp cocoa powder.",
       instructions:"STEP 1 Mix the coffee granules with 2 tbsp boiling water in a large jug and stir to combine. Add the coffee liqueur and 75ml cold water. Pour into a shallow dish and set aside. STEP 2; Make the cream layer by beating the mascarpone, condensed milk and vanilla extract with an electric whisk until thick and smooth. STEP 3; Break the sponge fingers into two or three pieces and soak in the coffee mixture for a few secs. Put a few bits of the sponge in the bottom of two wine or sundae glasses and top with the cream. Sift over the cocoa and chill for at least 1 hr before serving.",
-      difficulty: "Advanced",
-      difficultyImage: "../src/media/icons/advanced.svg",
+      difficulty: "Intermediate",
+      difficultyImage: "../src/media/icons/intermediate.svg",
       clock: "../media/icons/clock.svg",
       diet: "Vegetarian",
       dietImage: "../media/icons/vegetarian.svg",
@@ -141,8 +137,8 @@ const pastaRecipes = [
       imageUrl:"https://images.pexels.com/photos/5060461/pexels-photo-5060461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       ingredients:"650ml milk; 40g plain flour; 40g butter; 2 tsp Dijon mustard; 150g mature cheddar , grated; 180g frozen peas; handful of parsley , chopped; 300g macaroni; 300g fish pie mix (smoked fish, white fish and salmon); green salad , to serve (optional)",
       instructions:"STEP 1 Pour the milk into a large pan and add the flour and butter. Set over a medium heat and whisk continuously until you have a smooth, thick white sauce. Remove from the heat, add the mustard, most of the cheese (save a handful for the top), peas and parsley.; STEP 2 Meanwhile, boil the pasta in a large pan of water following pack instructions until just cooked. Drain.; STEP 3 Heat the oven to 200C/180C fan/gas 6. Tip the pasta into the sauce and add half the fish, stir everything together then tip into a large baking dish. Top with the rest of the fish, pushing it into the pasta a little, then scatter with the remaining cheese. Bake for 30 mins until golden, then serve with salad, if you like. Can be chilled and eaten within three days or frozen for up to a month. Defrost in the fridge, then reheat in a microwave or oven until piping hot.",
-      difficulty: "Advanced",
-      difficultyImage: "../src/media/icons/advanced.svg",
+      difficulty: "Beginner",
+      difficultyImage: "../src/media/icons/Beginner.svg",
       clock: "../media/icons/clock.svg",
       diet: "",
       dietImage: "../media/icons/noImage.svg",
